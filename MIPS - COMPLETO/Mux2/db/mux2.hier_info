@@ -1,0 +1,24 @@
+|mux2
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux2|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux2|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux2|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,95 @@
+Info: Start Nativelink Simulation process
+
+========= EDA Simulation Settings =====================
+
+Sim Mode              :  Gate
+Family                :  cycloneive
+Quartus root          :  c:/altera/13.0/quartus/bin64/
+Quartus sim root      :  c:/altera/13.0/quartus/eda/sim_lib
+Simulation Tool       :  modelsim-altera
+Simulation Language   :  verilog
+Simulation Mode       :  GUI
+Sim Output File       :  flopenr.vo
+Sim SDF file          :  flopenr__verilog.sdo
+Sim dir               :  simulation\modelsim
+
+=======================================================
+
+Info: Starting NativeLink simulation with ModelSim-Altera software
+Sourced NativeLink script c:/altera/13.0/quartus/common/tcl/internal/nativelink/modelsim.tcl
+Warning: File flopenr_run_msim_gate_verilog.do already exists - backing up current file as flopenr_run_msim_gate_verilog.do.bak8
+Probing transcript
+ModelSim-Altera Info: # Reading C:/altera/13.0/modelsim_ase/tcl/vsim/pref.tcl 
+ModelSim-Altera Info: # do flopenr_run_msim_gate_verilog.do 
+ModelSim-Altera Info: # if {[file exists gate_work]} {
+ModelSim-Altera Info: # 	vdel -lib gate_work -all
+ModelSim-Altera Info: # }
+ModelSim-Altera Info: # vlib gate_work
+ModelSim-Altera Info: # vmap work gate_work
+ModelSim-Altera Info: # Copying C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+ModelSim-Altera Info: # Modifying modelsim.ini
+ModelSim-Altera Warning: # ** Warning: Copied C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+ModelSim-Altera Info: #          Updated modelsim.ini.
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # vlog -vlog01compat -work work +incdir+. {flopenr.vo}
+ModelSim-Altera Info: # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+ModelSim-Altera Info: # -- Compiling module flopenr
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # Top level modules:
+ModelSim-Altera Info: # 	flopenr
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # vlog -sv -work work +incdir+C:/Users/Thales/Desktop/FLOPSMUX/Flopenr/Testbench {C:/Users/Thales/Desktop/FLOPSMUX/Flopenr/Testbench/flopenr_tb.sv}
+ModelSim-Altera Info: # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+ModelSim-Altera Info: # -- Compiling module flopenr_tb
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # Top level modules:
+ModelSim-Altera Info: # 	flopenr_tb
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc"  flopenr_tb
+ModelSim-Altera Info: # vsim +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=\"+acc\" -t 1ps flopenr_tb 
+ModelSim-Altera Info: # Loading sv_std.std
+ModelSim-Altera Info: # Loading work.flopenr_tb
+ModelSim-Altera Info: # Loading work.flopenr
+ModelSim-Altera Info: # Loading cycloneive_ver.cycloneive_io_ibuf
+ModelSim-Altera Info: # Loading cycloneive_ver.cycloneive_io_obuf
+ModelSim-Altera Info: # Loading cycloneive_ver.cycloneive_lcell_comb
+ModelSim-Altera Info: # Loading altera_ver.dffeas
+ModelSim-Altera Info: # SDF 10.1d Compiler 2012.11 Nov  2 2012
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # Loading instances from flopenr_v.sdo
+ModelSim-Altera Info: # Loading altera_ver.PRIM_GDFF_LOW
+ModelSim-Altera Info: # Loading timing data from flopenr_v.sdo
+ModelSim-Altera Info: # ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /flopenr_tb File: C:/Users/Thales/Desktop/FLOPSMUX/Flopenr/Testbench/flopenr_tb.sv
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # add wave *
+ModelSim-Altera Info: # view structure
+ModelSim-Altera Info: # .main_pane.structure.interior.cs.body.struct
+ModelSim-Altera Info: # view signals
+ModelSim-Altera Info: # .main_pane.objects.interior.cs.body.tree
+ModelSim-Altera Info: # run -all
+ModelSim-Altera Info: # Iniciando Testbench
+ModelSim-Altera Info: # | CLK | RST | EN | D | Q |
+ModelSim-Altera Info: # ---------------
+ModelSim-Altera Info: # | 0 | 1 | 0 | 0 | 0 | OK
+ModelSim-Altera Info: # | 1 | 1 | 0 | 0 | 0 | OK
+ModelSim-Altera Info: # | 0 | 1 | 1 | 0 | 0 | OK
+ModelSim-Altera Info: # | 1 | 1 | 1 | 0 | 0 | OK
+ModelSim-Altera Info: # | 0 | 1 | 0 | 1 | 0 | OK
+ModelSim-Altera Info: # | 1 | 1 | 0 | 1 | 0 | OK
+ModelSim-Altera Info: # | 0 | 1 | 1 | 1 | 0 | OK
+ModelSim-Altera Info: # | 1 | 1 | 1 | 1 | 0 | OK
+ModelSim-Altera Info: # | 0 | 0 | 0 | 0 | 0 | OK
+ModelSim-Altera Info: # | 1 | 0 | 0 | 0 | 0 | OK
+ModelSim-Altera Info: # | 0 | 0 | 1 | 0 | 0 | OK
+ModelSim-Altera Info: # | 1 | 0 | 1 | 0 | 0 | OK
+ModelSim-Altera Info: # | 0 | 0 | 0 | 1 | 0 | OK
+ModelSim-Altera Info: # | 1 | 0 | 0 | 1 | 0 | OK
+ModelSim-Altera Info: # | 0 | 0 | 1 | 1 | 0 | OK
+ModelSim-Altera Info: # | 1 | 0 | 1 | 1 | 1 | OK
+ModelSim-Altera Info: # Testes Efetuados  = 16
+ModelSim-Altera Info: # Erros Encontrados = 0
+ModelSim-Altera Info: # Break in Module flopenr_tb at C:/Users/Thales/Desktop/FLOPSMUX/Flopenr/Testbench/flopenr_tb.sv line 59
+ModelSim-Altera Info: # Simulation Breakpoint: Break in Module flopenr_tb at C:/Users/Thales/Desktop/FLOPSMUX/Flopenr/Testbench/flopenr_tb.sv line 59
+ModelSim-Altera Info: # MACRO ./flopenr_run_msim_gate_verilog.do PAUSED at line 17
+Info: NativeLink simulation flow was successful

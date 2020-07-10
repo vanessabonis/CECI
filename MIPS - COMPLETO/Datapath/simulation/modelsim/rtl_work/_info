@@ -1,0 +1,517 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/simulation/modelsim
+vbancoRegistradores
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1528755288
+!i10b 1
+!s100 f?bfkUf2@`EhXQmMgE8Ol2
+IIEUzX7Z2c`nHIi0kA9MfO3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 bancoregistradores_sv_unit
+S1
+R0
+w1528214847
+8C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/bancoregistradores.sv
+FC:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/bancoregistradores.sv
+L0 1
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1528755288.000000
+!s107 C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/bancoregistradores.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath|C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/bancoregistradores.sv|
+!i113 1
+Z6 o-sv -work work
+Z7 !s92 -sv -work work +incdir+C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath
+Z8 tCvgOpt 0
+nbanco@registradores
+vDatapath
+R1
+Z9 !s110 1528755286
+!i10b 1
+!s100 @MoTEV]O7`A>Q]TYP;obZ0
+I]TLkmD;5JI?B?cQLWzM3Q1
+R3
+!s105 Datapath_sv_unit
+S1
+R0
+w1528397337
+8C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/Datapath.sv
+FC:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/Datapath.sv
+L0 1
+R4
+r1
+!s85 0
+31
+!s108 1528755285.000000
+!s107 C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/Datapath.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath|C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/Datapath.sv|
+!i113 1
+R6
+R7
+R8
+n@datapath
+vDatapath_tb
+R1
+Z10 !s110 1528755294
+!i10b 1
+!s100 @I^5l[HEP8GLle5hO?bzX3
+IZ_2<ND<nUCgDB:[omPF;[3
+R3
+!s105 Datapath_tb_sv_unit
+S1
+R0
+w1528741938
+8C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/testbench/Datapath_tb.sv
+FC:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/testbench/Datapath_tb.sv
+L0 3
+R4
+r1
+!s85 0
+31
+!s108 1528755294.000000
+!s107 C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/testbench/Datapath_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/testbench|C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/testbench/Datapath_tb.sv|
+!i113 1
+R6
+!s92 -sv -work work +incdir+C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/testbench
+R8
+n@datapath_tb
+vdecoder
+R1
+R2
+!i10b 1
+!s100 C<=Y7l3BX8BO`FLzn^]G]0
+IJ>_GdQRR4EhGAbRaGhmnY3
+R3
+!s105 decoder_sv_unit
+S1
+R0
+w1526160494
+8C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/decoder.sv
+FC:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/decoder.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/decoder.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath|C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/decoder.sv|
+!i113 1
+R6
+R7
+R8
+vmeioSomador
+R1
+Z11 !s110 1528755292
+!i10b 1
+!s100 WiAHBN7XaW0gUd7R<7IO61
+I^bFO[HCWN1MJK8zjoaFdX0
+R3
+Z12 !s105 somador1bit_sv_unit
+S1
+R0
+Z13 w1527622568
+Z14 8C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/somador1bit.sv
+Z15 FC:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/somador1bit.sv
+L0 1
+R4
+r1
+!s85 0
+31
+Z16 !s108 1528755292.000000
+Z17 !s107 C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/somador1bit.sv|
+Z18 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath|C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/somador1bit.sv|
+!i113 1
+R6
+R7
+R8
+nmeio@somador
+vmux2
+R1
+Z19 !s110 1528755287
+!i10b 1
+!s100 mDF_?PD>5ZKO[4H1;B>MN3
+IQ3<S3aSBz`QAoB<4NfF=`0
+R3
+!s105 mux2_sv_unit
+S1
+R0
+w1527384739
+8C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/mux2.sv
+FC:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/mux2.sv
+L0 1
+R4
+r1
+!s85 0
+31
+Z20 !s108 1528755286.000000
+!s107 C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/mux2.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath|C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/mux2.sv|
+!i113 1
+R6
+R7
+R8
+vmux2_1bit
+R1
+R10
+!i10b 1
+!s100 J;V2>>2:`bkB:5]d;<X^;0
+Ig=m;J4gFb3i[46YW:5TKV1
+R3
+!s105 mux2_1bit_sv_unit
+S1
+R0
+w1528551400
+8C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/mux2_1bit.sv
+FC:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/mux2_1bit.sv
+L0 1
+R4
+r1
+!s85 0
+31
+Z21 !s108 1528755293.000000
+!s107 C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/mux2_1bit.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath|C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/mux2_1bit.sv|
+!i113 1
+R6
+R7
+R8
+vmux2_5bits
+R1
+R19
+!i10b 1
+!s100 ?jfF@kkPJ3<3aoDF]Y;cT3
+IfM:O0d`in[N:LcWCSo67]0
+R3
+!s105 mux2_5bits_sv_unit
+S1
+R0
+w1527477249
+8C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/mux2_5bits.sv
+FC:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/mux2_5bits.sv
+L0 1
+R4
+r1
+!s85 0
+31
+Z22 !s108 1528755287.000000
+!s107 C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/mux2_5bits.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath|C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/mux2_5bits.sv|
+!i113 1
+R6
+R7
+R8
+vmux32
+R1
+Z23 !s110 1528755289
+!i10b 1
+!s100 :]Hj4W5RjCQ:QYVoL]JKf3
+I6MO?DdTYNG2_kdZP6Vo8n3
+R3
+!s105 mux32_sv_unit
+S1
+R0
+w1528214619
+8C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/mux32.sv
+FC:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/mux32.sv
+L0 1
+R4
+r1
+!s85 0
+31
+Z24 !s108 1528755289.000000
+!s107 C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/mux32.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath|C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/mux32.sv|
+!i113 1
+R6
+R7
+R8
+vmux4
+R1
+Z25 !s110 1528755290
+!i10b 1
+!s100 O`9:f:_Gz7W08K<>m7kbX2
+I_@@ZhZH57JB;1c8@TB<ke0
+R3
+!s105 mux4_sv_unit
+S1
+R0
+w1527384843
+8C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/mux4.sv
+FC:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/mux4.sv
+L0 1
+R4
+r1
+!s85 0
+31
+Z26 !s108 1528755290.000000
+!s107 C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/mux4.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath|C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/mux4.sv|
+!i113 1
+R6
+R7
+R8
+vmux4_1bit
+R1
+Z27 !s110 1528755293
+!i10b 1
+!s100 Io`=IBNh<UH0IUZEok5^W2
+IJPoZ5mojm_mo5zS[6SYW=0
+R3
+!s105 mux4_1bit_sv_unit
+S1
+R0
+w1528551397
+8C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/mux4_1bit.sv
+FC:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/mux4_1bit.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R21
+!s107 C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/mux4_1bit.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath|C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/mux4_1bit.sv|
+!i113 1
+R6
+R7
+R8
+vmux8
+R1
+R23
+!i10b 1
+!s100 `8N;b:QK7N2]1i`_>QS163
+II=jn8MR:QKe`Kc[51XFI83
+R3
+!s105 mux8_sv_unit
+S1
+R0
+w1528554619
+8C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/mux8.sv
+FC:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/mux8.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R24
+!s107 C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/mux8.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath|C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/mux8.sv|
+!i113 1
+R6
+R7
+R8
+vmux8_1bit
+R1
+R27
+!i10b 1
+!s100 fjIl_iT>bjd:XzFQ9JQfA1
+Id4T<JeBS@o:ONF]4<0Q?40
+R3
+!s105 mux8_1bit_sv_unit
+S1
+R0
+w1528551394
+8C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/mux8_1bit.sv
+FC:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/mux8_1bit.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R21
+!s107 C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/mux8_1bit.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath|C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/mux8_1bit.sv|
+!i113 1
+R6
+R7
+R8
+vregistradorEnReset
+R1
+R9
+!i10b 1
+!s100 @>8DdlMZm=XQBlzLITZTS0
+Ie7c_=<7lD7AiTbaUlAkQW1
+R3
+!s105 registradorenreset_sv_unit
+S1
+R0
+w1528212428
+8C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/registradorenreset.sv
+FC:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/registradorenreset.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R20
+!s107 C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/registradorenreset.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath|C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/registradorenreset.sv|
+!i113 1
+R6
+R7
+R8
+nregistrador@en@reset
+vregistradorReset
+R1
+R19
+!i10b 1
+!s100 XKc4_BmIjSD_1VJ?@?=720
+I;=;gHG<?5WATCZ`z[4DDL2
+R3
+!s105 registradorreset_sv_unit
+S1
+R0
+w1528261662
+8C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/registradorreset.sv
+FC:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/registradorreset.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R22
+!s107 C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/registradorreset.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath|C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/registradorreset.sv|
+!i113 1
+R6
+R7
+R8
+nregistrador@reset
+vshifter2
+R1
+Z28 !s110 1528755291
+!i10b 1
+!s100 n9<zol8k1@=gcn=NnN7;93
+IHkH75ekR6k>BzF6z<kWN<3
+R3
+!s105 shifter2_sv_unit
+S1
+R0
+w1526328310
+8C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/shifter2.sv
+FC:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/shifter2.sv
+L0 1
+R4
+r1
+!s85 0
+31
+Z29 !s108 1528755291.000000
+!s107 C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/shifter2.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath|C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/shifter2.sv|
+!i113 1
+R6
+R7
+R8
+vsignalExtension
+R1
+R25
+!i10b 1
+!s100 N2JZOkTfU;E5?<<lZ::Xl1
+If7`=olDcX]mnK9EnoDzOg2
+R3
+!s105 signalextension_sv_unit
+S1
+R0
+w1526338396
+8C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/signalextension.sv
+FC:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/signalextension.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R26
+!s107 C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/signalextension.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath|C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/signalextension.sv|
+!i113 1
+R6
+R7
+R8
+nsignal@extension
+vsomador1bit
+R1
+R11
+!i10b 1
+!s100 ?E]n`iX4H@fB>@EHUFFe82
+IFcCOYKdGD;CHeK?F[EbYU2
+R3
+R12
+S1
+R0
+R13
+R14
+R15
+L0 11
+R4
+r1
+!s85 0
+31
+R16
+R17
+R18
+!i113 1
+R6
+R7
+R8
+vula1bit
+R1
+R11
+!i10b 1
+!s100 YDX0T1^mIXL40jhRTZFk61
+IYiTaa:0LmlDndgC7>`3RE1
+R3
+!s105 ula1bit_sv_unit
+S1
+R0
+w1528551336
+8C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/ula1bit.sv
+FC:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/ula1bit.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R16
+!s107 C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/ula1bit.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath|C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/ula1bit.sv|
+!i113 1
+R6
+R7
+R8
+vula32bits
+R1
+R28
+!i10b 1
+!s100 MmCF3`1W5YKZSPA>amFB@2
+IUAhLO:FkVN4kF_HBPh[GG2
+R3
+!s105 ula32bits_sv_unit
+S1
+R0
+w1528555579
+8C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/ula32bits.sv
+FC:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/ula32bits.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R29
+!s107 C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/ula32bits.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath|C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/ula32bits.sv|
+!i113 1
+R6
+R7
+R8

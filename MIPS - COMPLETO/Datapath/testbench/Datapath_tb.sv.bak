@@ -1,0 +1,74 @@
+`timescale 1ns/10ps
+
+module Datapath_tb();
+	logic clk, reset;
+	input logic ck, reset_;
+	logic IorD, RegDest, MemtoReg, IRWrite, RegWrite, ALUSrcA, Branch, PCWrite;
+	logic[1:0] ALUSrcB, PCSrc;
+	logic[2:0] ALUControl;
+	logic[31:0] RD;
+	logic[31:0] Adr;
+	logic[31:0] WD;
+	logic overflow;
+	logic[31:0] Adr_expected;
+	logic[31:0] WD_expected;
+	logic overflow_expected;
+	logic [31:0] vectornum, errors;
+	logic [113:0] testvectors[10000:0];
+	
+	Datapath duv(.ck(ck), .reset_(reset_), .IorD(IorD), .RegDest(RegDest), .MemtoReg(MemtoReg), .IRWrite(IRWrite), 
+					 .RegWrite(RegWrite), .ALUSrcA(ALUSrcA), .ALUSrcB(ALUSrcB), .ALUControl(ALUControl), .PCSrc(PCSrc), 
+					 .Branch(Branch), .PCWrite(PCWrite), .WD(WD), .Adr(Adr), .RD(RD), .overflow(overflow))
+	always
+		begin
+			clk = 1; #25; clk = 0; #5;
+		end
+		
+		initial
+			begin 
+				$readmemb("Datapath.tv", testvectors);
+				vectornum = 0;
+				errors = 0;
+				reset = 1; #8; reset = 0;
+			end
+			
+		always @ (posedge clk)
+			begin
+				#1 {A1[4:0], A2[4:0], A3[4:0], WD3[31:0], WE3, ck, reset_bank,  
+					 RD1_expected[31:0], RD2_expected[31:0]} = testvectors[vectornum];
+			end
+		always @ (negedge clk)
+			if (~reset) begin
+				for(reg[5:0] i = 6'b000000; i < 6'b100000; i++) begin
+					assert (RD1[i] === RD1_expected[i]) else 
+					 begin
+						if(RD1_expected[i] !== 1'bx) begin
+							$display("Line with error: %1d", vectornum + 1);
+							$display("Error: A1: %b, A2: %b, A3: %b, WD3: %b", A1, A2, A3, WD3); 
+							$display(" ck: %b, WE3: %b, reset_bank: %b", ck, WE3, reset_bank);
+							$display(" RD1 = %b, (%b expected)", RD1[i], RD1_expected[i]);
+						
+							errors = errors + 1;
+						end
+					 end
+					 assert (RD2[i] === RD2_expected[i]) else 
+					 begin
+						if(RD2_expected[i] !== 1'bx) begin
+							$display("Line with error: %1d", vectornum + 1);
+							$display("Error: A1: %b, A2: %b, A3: %b, WD3: %b", A1, A2, A3, WD3); 
+							$display(" ck: %b, WE3: %b, reset_bank: %b", ck, WE3, reset_bank);
+							$display(" RD2 = %b, (%b expected)", RD2[i], RD2_expected[i]);
+						
+							errors = errors + 1;
+						end
+					 end
+				end
+				
+				vectornum = vectornum + 1;
+				
+				if(testvectors[vectornum] === 114'bx) begin
+					$display("%d tests completed with %d errors", vectornum, errors);
+					$finish;
+				end
+			end
+endmodule

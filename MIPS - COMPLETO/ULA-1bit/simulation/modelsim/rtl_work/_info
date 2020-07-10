@@ -1,0 +1,169 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Thales\Desktop\ULA_Thales\simulation\modelsim
+vmeioSomador
+Z1 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+I5f9J89iS5D8n0khh4Z]ei0
+VF5<6KORLTOCLCbC4I15EI1
+Z2 !s105 somador1bit_sv_unit
+S1
+Z3 dC:\Users\Thales\Desktop\ULA_Thales\simulation\modelsim
+Z4 w1555523947
+Z5 8C:/Users/Thales/Desktop/ULA_Thales/somador1bit.sv
+Z6 FC:/Users/Thales/Desktop/ULA_Thales/somador1bit.sv
+L0 1
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s108 1555526500.066000
+Z9 !s107 C:/Users/Thales/Desktop/ULA_Thales/somador1bit.sv|
+Z10 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Thales/Desktop/ULA_Thales|C:/Users/Thales/Desktop/ULA_Thales/somador1bit.sv|
+Z11 o-sv -work work -O0
+Z12 !s92 -sv -work work +incdir+C:/Users/Thales/Desktop/ULA_Thales -O0
+nmeio@somador
+!i10b 1
+!s100 ;nWId^bPHmThPE6Qi0gbc1
+!s85 0
+!s101 -O0
+vmux2
+R1
+IBaS>d1561NTcWaOg6BME<3
+VmYka[5Cgaz7A1oMBSFDoj3
+S1
+R3
+w1555523877
+8C:/Users/Thales/Desktop/ULA_Thales/mux2.sv
+FC:/Users/Thales/Desktop/ULA_Thales/mux2.sv
+L0 1
+R7
+r1
+31
+R11
+R12
+!i10b 1
+!s100 0nC4Tk<mg:<2abf?9QhIV1
+!s105 mux2_sv_unit
+!s85 0
+!s108 1555526500.754000
+!s107 C:/Users/Thales/Desktop/ULA_Thales/mux2.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Thales/Desktop/ULA_Thales|C:/Users/Thales/Desktop/ULA_Thales/mux2.sv|
+!s101 -O0
+vmux4
+R1
+IYjzbl4NnBXe>C0G`4Kh2?1
+V@Q?K<hmnRV:h<@dRXn^;f1
+S1
+R3
+w1555523875
+8C:/Users/Thales/Desktop/ULA_Thales/mux4.sv
+FC:/Users/Thales/Desktop/ULA_Thales/mux4.sv
+L0 1
+R7
+r1
+31
+R11
+R12
+!i10b 1
+!s100 VXhIz3X_hTG:DcONL5_2z2
+!s105 mux4_sv_unit
+!s85 0
+!s108 1555526500.566000
+!s107 C:/Users/Thales/Desktop/ULA_Thales/mux4.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Thales/Desktop/ULA_Thales|C:/Users/Thales/Desktop/ULA_Thales/mux4.sv|
+!s101 -O0
+vmux8
+R1
+Iade>I]Ie32:ohU>M6U8[S3
+VYzOXBDJKhjWTolaE>z[jW3
+S1
+R3
+w1555523861
+8C:/Users/Thales/Desktop/ULA_Thales/mux8.sv
+FC:/Users/Thales/Desktop/ULA_Thales/mux8.sv
+L0 1
+R7
+r1
+31
+R11
+R12
+!i10b 1
+!s100 VNf[kg:TI9HUEGbAYdQXF3
+!s105 mux8_sv_unit
+!s85 0
+!s108 1555526500.332000
+!s107 C:/Users/Thales/Desktop/ULA_Thales/mux8.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Thales/Desktop/ULA_Thales|C:/Users/Thales/Desktop/ULA_Thales/mux8.sv|
+!s101 -O0
+vsomador1bit
+R1
+IdzEBIafCKCTlj@>_geMFO0
+Vai6ceVCKVRKU>27V0^F_>0
+R2
+S1
+R3
+R4
+R5
+R6
+L0 11
+R7
+r1
+31
+R8
+R9
+R10
+R11
+R12
+!i10b 1
+!s100 MJUg4NW<fFV1H_^2JllNa0
+!s85 0
+!s101 -O0
+vULA_1bit
+R1
+I<IRMjlk2]NDAY?5`W>Cn22
+VSA>mTAUQG9>i8_=PmHNGS3
+S1
+R3
+w1555524810
+8C:/Users/Thales/Desktop/ULA_Thales/ULA_1bit.sv
+FC:/Users/Thales/Desktop/ULA_Thales/ULA_1bit.sv
+L0 1
+R7
+r1
+31
+R11
+n@u@l@a_1bit
+R12
+!i10b 1
+!s100 [0iz`XXcUFQcEMmU;FgLB3
+!s105 ULA_1bit_sv_unit
+!s85 0
+!s108 1555526499.847000
+!s107 C:/Users/Thales/Desktop/ULA_Thales/ULA_1bit.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Thales/Desktop/ULA_Thales|C:/Users/Thales/Desktop/ULA_Thales/ULA_1bit.sv|
+!s101 -O0
+vULA_1bit_tb
+R1
+!i10b 1
+!s100 Ikn4<]=5k0?4[TVB4?^`A0
+IXeVnng]?WAQYOZ3ICCVRM2
+VG<P[UBk[mD5hHMoezU8>g0
+!s105 ULA_1bit_tb_sv_unit
+S1
+R3
+w1555526496
+8C:/Users/Thales/Desktop/ULA_Thales/testbench/ULA_1bit_tb.sv
+FC:/Users/Thales/Desktop/ULA_Thales/testbench/ULA_1bit_tb.sv
+L0 3
+R7
+r1
+!s85 0
+31
+!s108 1555526500.926000
+!s107 C:/Users/Thales/Desktop/ULA_Thales/testbench/ULA_1bit_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Thales/Desktop/ULA_Thales/testbench|C:/Users/Thales/Desktop/ULA_Thales/testbench/ULA_1bit_tb.sv|
+!s101 -O0
+R11
+!s92 -sv -work work +incdir+C:/Users/Thales/Desktop/ULA_Thales/testbench -O0
+n@u@l@a_1bit_tb

@@ -1,0 +1,62 @@
+`timescale 1ns/10ps
+module signextend_tb();
+
+logic clk,rst;
+logic [15:0] A;
+logic [31:0] y;
+
+logic [31:0] y_esperado;
+
+logic [63:0]vector_ind,erros;
+logic [47:0] testvectors[1000:0];
+
+signextend DUV(
+		.a(A),
+		.y(y)
+		);
+
+always
+    begin
+    clk =1; #10; clk=0; #5;
+    end
+
+initial begin
+
+	$readmemb("signextend_tv.tv",testvectors);
+
+	vector_ind=0; erros=0;
+
+	rst=1; #8; rst=0;
+
+end
+
+
+always @(posedge clk)
+begin
+
+	{A[15:0],y_esperado[31:0]} = testvectors[vector_ind];
+
+end
+
+
+always @(negedge clk)
+if (~rst) begin
+
+	if (y !== y_esperado) begin
+		$display("Erro: entradas= %b",{A});
+		$display("S = %b (%b esperado)",y,y_esperado);
+		erros = erros + 1;
+	end
+	
+	vector_ind = vector_ind + 1;
+	
+	if(testvectors[vector_ind] === 48'bx) begin
+
+		$display("%d testes completados com %d erros", vector_ind, erros);
+
+		$finish;
+	end
+end
+
+
+endmodule

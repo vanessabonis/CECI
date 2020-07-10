@@ -1,0 +1,214 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Thales\Desktop\CECI_MIPS\bancoRegistradores\simulation\modelsim
+vbancoRegistradores
+Z1 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+IbLGmOaFM?DP5XYSV?CJNl0
+VKlASA:KO_KZS8bj20DhWc1
+S1
+Z2 dC:\Users\Thales\Desktop\CECI_MIPS\bancoRegistradores\simulation\modelsim
+w1554671817
+8C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores/bancoRegistradores.sv
+FC:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores/bancoRegistradores.sv
+L0 1
+Z3 OV;L;10.1d;51
+r1
+31
+Z4 o-sv -work work -O0
+Z5 !s92 -sv -work work +incdir+C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores -O0
+nbanco@registradores
+!i10b 1
+!s100 AlW15fCfTaNT>K=e;l8gG3
+!s105 bancoRegistradores_sv_unit
+!s85 0
+!s108 1554751504.514000
+!s107 C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores/bancoRegistradores.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores|C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores/bancoRegistradores.sv|
+!s101 -O0
+vbancoRegistradores_tb
+R1
+!i10b 1
+!s100 kmO=j4]PPXOQEL@f^Rz^?1
+IM^U>lzF?i;MQdI]LmVVTK1
+V2XV`WD=T5XBKnDGEeECcc1
+!s105 bancoRegistradores_tb_sv_unit
+S1
+R2
+w1554751433
+8C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores/testbench/bancoRegistradores_tb.sv
+FC:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores/testbench/bancoRegistradores_tb.sv
+L0 3
+R3
+r1
+!s85 0
+31
+!s108 1554751504.709000
+!s107 C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores/testbench/bancoRegistradores_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores/testbench|C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores/testbench/bancoRegistradores_tb.sv|
+!s101 -O0
+R4
+!s92 -sv -work work +incdir+C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores/testbench -O0
+nbanco@registradores_tb
+vdecoder
+R1
+IzJSOTFLeAMzeTSY=Y69>B0
+V5=:ZhH:N0MhGzDm6AMPC23
+S1
+R2
+w1554377111
+8C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores/decoder.sv
+FC:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores/decoder.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 lI485h=PI1TYG9SJ4a7nN1
+!s105 decoder_sv_unit
+!s85 0
+!s108 1554751503.061000
+!s107 C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores/decoder.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores|C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores/decoder.sv|
+!s101 -O0
+vflopenr
+R1
+I`jWP6kDz?k7CWKT3NMXV51
+VmEVPe?[3Bd];NoWcd8TlK1
+S1
+R2
+w1554120098
+8C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores/flopenr.sv
+FC:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores/flopenr.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 >57c@d9bA`[h8^3<mTQIP0
+!s105 flopenr_sv_unit
+!s85 0
+!s108 1554751503.342000
+!s107 C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores/flopenr.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores|C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores/flopenr.sv|
+!s101 -O0
+vinversor
+R1
+IPkViEa>OS`To0NcjB`::c1
+VK9C;<dDEdeKN0OH61L[:Q1
+S1
+R2
+w1553633326
+8C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores/inversor.sv
+FC:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores/inversor.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 a^Y?c7N7^f0nzPOkX:IA[0
+!s105 inversor_sv_unit
+!s85 0
+!s108 1554751503.566000
+!s107 C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores/inversor.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores|C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores/inversor.sv|
+!s101 -O0
+vmux2
+R1
+IIENlZWB^MK2^^1_Z2U9=[3
+V4:42Wnh=OcQJ[:;]F`0F91
+S1
+R2
+w1554122007
+8C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores/mux2.sv
+FC:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores/mux2.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 1AA_7=E=QY?Z@C^Xdn<cl3
+!s105 mux2_sv_unit
+!s85 0
+!s108 1554751503.778000
+!s107 C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores/mux2.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores|C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores/mux2.sv|
+!s101 -O0
+vmux32
+R1
+ICBdZ6IH5SS3ZX5Sj^m8>o1
+Vi85T0_AAiK7`5^;iMJK7c3
+S1
+R2
+w1554655061
+8C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores/mux32.sv
+FC:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores/mux32.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 M;T13JeDoU`g5kTI<AE8n2
+!s105 mux32_sv_unit
+!s85 0
+!s108 1554751504.167000
+!s107 C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores/mux32.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores|C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores/mux32.sv|
+!s101 -O0
+vmux4
+R1
+InzMDgHa;@_IF@J9;A9jXP3
+VD;U:>2Gg;99:CJY5m?OWI2
+S1
+R2
+w1553787850
+8C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores/mux4.sv
+FC:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores/mux4.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 =I7UfY<Jh7HL:^a772VND0
+!s105 mux4_sv_unit
+!s85 0
+!s108 1554751503.940000
+!s107 C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores/mux4.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores|C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores/mux4.sv|
+!s101 -O0
+vtristate
+R1
+I4bj`WQT]PlH;7o?^<o3QX0
+VRec>Y2aHg`5_EGQ7YU:J70
+S1
+R2
+w1553632881
+8C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores/tristate.sv
+FC:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores/tristate.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 zldNC?>=SOBhzC`:hCQSl3
+!s105 tristate_sv_unit
+!s85 0
+!s108 1554751504.310000
+!s107 C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores/tristate.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores|C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores/tristate.sv|
+!s101 -O0

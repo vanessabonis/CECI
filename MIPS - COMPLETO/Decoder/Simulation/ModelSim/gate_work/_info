@@ -1,0 +1,51 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Thales\Desktop\Decoder\Simulation\ModelSim
+vdecoder
+Z1 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+I3D<SZ8LFEU95CGjc6DAba2
+V8PRoXENgWF>TO?Q_A@m9[3
+S1
+Z2 dC:\Users\Thales\Desktop\Decoder\Simulation\ModelSim
+w1554325097
+8decoder_6_1200mv_85c_slow.svo
+Fdecoder_6_1200mv_85c_slow.svo
+L0 31
+Z3 OV;L;10.1d;51
+r1
+31
+Z4 o-sv -work work -O0
+!i10b 1
+!s100 lW@J7Hh3BeX[;lh@Cf@Aj2
+!s105 decoder_6_1200mv_85c_slow_svo_unit
+!s85 0
+!s108 1554327345.493000
+!s107 decoder_6_1200mv_85c_slow.svo|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+.|decoder_6_1200mv_85c_slow.svo|
+!s101 -O0
+!s92 -sv -work work +incdir+. -O0
+vdecoder_tb
+R1
+!i10b 1
+!s100 TgBfXgfIJ58m9Vf:4fOX61
+IPa@iZM>2dPK=;3]aI6nLQ0
+V=ka5g8LfkPkNOiWKG@ETE2
+!s105 decoder_tb_sv_unit
+S1
+R2
+w1554327333
+8C:/Users/Thales/Desktop/Decoder/Testbench/decoder_tb.sv
+FC:/Users/Thales/Desktop/Decoder/Testbench/decoder_tb.sv
+L0 3
+R3
+r1
+!s85 0
+31
+!s108 1554327345.632000
+!s107 C:/Users/Thales/Desktop/Decoder/Testbench/decoder_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Thales/Desktop/Decoder/Testbench|C:/Users/Thales/Desktop/Decoder/Testbench/decoder_tb.sv|
+!s101 -O0
+R4
+!s92 -sv -work work +incdir+C:/Users/Thales/Desktop/Decoder/Testbench -O0

@@ -1,0 +1,115 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\aluno\Desktop\Entrega 2\Mux4\Simulation\ModelSim
+vinversor
+Z1 DXx6 sv_std 3 std 0 22 :CP]PHbGOHGT_H:3KF`8L2
+Ic03lIZTji?n11A[]TzW4[0
+VK9C;<dDEdeKN0OH61L[:Q1
+S1
+Z2 dC:\Users\aluno\Desktop\Entrega 2\Mux4\Simulation\ModelSim
+w1553633326
+8C:/Users/aluno/Desktop/Entrega 2/Mux4/inversor.sv
+FC:/Users/aluno/Desktop/Entrega 2/Mux4/inversor.sv
+L0 1
+Z3 OV;L;10.0c;49
+r1
+31
+Z4 o-sv -work work -O0
+Z5 !s92 -sv -work work {+incdir+C:/Users/aluno/Desktop/Entrega 2/Mux4} -O0
+!s100 AAX<5L]9CC658Z1STzL3Z0
+!s105 inversor_sv_unit
+!s85 0
+!s108 1553636414.889000
+!s107 C:/Users/aluno/Desktop/Entrega 2/Mux4/inversor.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/aluno/Desktop/Entrega 2/Mux4|C:/Users/aluno/Desktop/Entrega 2/Mux4/inversor.sv|
+!s101 -O0
+vmux2
+R1
+IQ<oc31knTWl:@bV0e1Oi03
+V4:42Wnh=OcQJ[:;]F`0F91
+S1
+R2
+w1553632935
+8C:/Users/aluno/Desktop/Entrega 2/Mux4/mux2.sv
+FC:/Users/aluno/Desktop/Entrega 2/Mux4/mux2.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+!s100 <5bQ=7DJ`J^G>g>;:Y[fL2
+!s105 mux2_sv_unit
+!s85 0
+!s108 1553636414.932000
+!s107 C:/Users/aluno/Desktop/Entrega 2/Mux4/mux2.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/aluno/Desktop/Entrega 2/Mux4|C:/Users/aluno/Desktop/Entrega 2/Mux4/mux2.sv|
+!s101 -O0
+vmux4
+R1
+IZzafQfMTD`NMAc^XBzRiI2
+VD;U:>2Gg;99:CJY5m?OWI2
+S1
+R2
+w1553636085
+8C:/Users/aluno/Desktop/Entrega 2/Mux4/mux4.sv
+FC:/Users/aluno/Desktop/Entrega 2/Mux4/mux4.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+!s100 4h8PjMaA9na0I6][BeaS;0
+!s105 mux4_sv_unit
+!s85 0
+!s108 1553636415.010000
+!s107 C:/Users/aluno/Desktop/Entrega 2/Mux4/mux4.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/aluno/Desktop/Entrega 2/Mux4|C:/Users/aluno/Desktop/Entrega 2/Mux4/mux4.sv|
+!s101 -O0
+vmux4_tb
+R1
+!s100 DcaXX2DjL4FG]jV0hz_Kk2
+I31PiBc5<43]HbT8lZUPbd1
+VB]C>BGJg;0H1iMJYLoBcB2
+!s105 mux4_tb_sv_unit
+S1
+R2
+w1553636394
+8C:/Users/aluno/Desktop/Entrega 2/Mux4/Testbench/mux4_tb.sv
+FC:/Users/aluno/Desktop/Entrega 2/Mux4/Testbench/mux4_tb.sv
+L0 3
+R3
+r1
+!s85 0
+31
+!s108 1553636415.049000
+!s107 C:/Users/aluno/Desktop/Entrega 2/Mux4/Testbench/mux4_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/aluno/Desktop/Entrega 2/Mux4/Testbench|C:/Users/aluno/Desktop/Entrega 2/Mux4/Testbench/mux4_tb.sv|
+!s101 -O0
+R4
+!s92 -sv -work work {+incdir+C:/Users/aluno/Desktop/Entrega 2/Mux4/Testbench} -O0
+vtristate
+R1
+Iz_OATBHH4Z]8ZU3B=9ok[3
+VRec>Y2aHg`5_EGQ7YU:J70
+S1
+R2
+w1553632881
+8C:/Users/aluno/Desktop/Entrega 2/Mux4/tristate.sv
+FC:/Users/aluno/Desktop/Entrega 2/Mux4/tristate.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+!s100 4RHDY3fo>:Ucn1bcY:d3n0
+!s105 tristate_sv_unit
+!s85 0
+!s108 1553636414.968000
+!s107 C:/Users/aluno/Desktop/Entrega 2/Mux4/tristate.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/aluno/Desktop/Entrega 2/Mux4|C:/Users/aluno/Desktop/Entrega 2/Mux4/tristate.sv|
+!s101 -O0

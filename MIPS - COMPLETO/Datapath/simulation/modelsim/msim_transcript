@@ -1,0 +1,70 @@
+# Reading C:/intelFPGA_lite/17.1/modelsim_ase/tcl/vsim/pref.tcl
+# do Datapath_run_msim_gate_systemverilog.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work gate_work 
+# Copying C:/intelFPGA_lite/17.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+. {Datapath_min_1200mv_0c_fast.svo}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:15:34 on Jun 11,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+." Datapath_min_1200mv_0c_fast.svo 
+# -- Compiling module Datapath
+# -- Compiling module hard_block
+# 
+# Top level modules:
+# 	Datapath
+# End time: 19:15:36 on Jun 11,2018, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/testbench {C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/testbench/Datapath_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:15:36 on Jun 11,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/testbench" C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/testbench/Datapath_tb.sv 
+# -- Compiling module Datapath_tb
+# 
+# Top level modules:
+# 	Datapath_tb
+# End time: 19:15:36 on Jun 11,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc"  Datapath_tb
+# vsim -t 1ps "+transport_int_delays" "+transport_path_delays" -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=""+acc"" Datapath_tb 
+# Start time: 19:15:36 on Jun 11,2018
+# Loading sv_std.std
+# Loading work.Datapath_tb
+# Loading work.Datapath
+# Loading work.hard_block
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_clkctrl
+# Loading cycloneive_ver.cycloneive_mux41
+# Loading cycloneive_ver.cycloneive_ena_reg
+# Loading altera_ver.dffeas
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# SDF 10.5b Compiler 2016.10 Oct  5 2016
+# 
+# Loading instances from Datapath_min_1200mv_0c_v_fast.sdo
+# Loading altera_ver.PRIM_GDFF_LOW
+# Loading timing data from Datapath_min_1200mv_0c_v_fast.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /Datapath_tb File: C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/testbench/Datapath_tb.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+#         34 tests completed with          0 errors
+# ** Note: $finish    : C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/testbench/Datapath_tb.sv(88)
+#    Time: 1015 ns  Iteration: 1  Instance: /Datapath_tb
+# 1
+# Break in Module Datapath_tb at C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/testbench/Datapath_tb.sv line 88
+# End time: 19:16:15 on Jun 11,2018, Elapsed time: 0:00:39
+# Errors: 0, Warnings: 0

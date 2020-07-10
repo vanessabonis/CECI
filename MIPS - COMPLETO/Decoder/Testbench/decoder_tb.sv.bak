@@ -1,0 +1,53 @@
+`timescale 1ns/10ps
+
+module decoder_tb();
+    
+//Define todas as variaveis que serao usadas no testbench
+logic clk,rst;
+logic [4:0] A;
+logic [31:0] S;
+
+logic [31:0] S_esperado;
+
+logic [31:0]vector_ind,erros;
+logic [63:0]testvectors[1000:0];
+
+decoder DUV(.sel(A),.Y(S));
+
+//Inicia o clock
+always begin clk =1; #10; clk=0; #5; end
+
+//Ler o arquivo com as respostas esperadas e inicializa algumas variaveis
+initial begin
+  $readmemb("decoder.tv",testvectors);
+  vector_ind=0; erros=0;
+  rst=1'b1; #7; rst=0;
+end
+
+//Ler a posicao da vez vetor e salva essas informacoes nas variaveis destinadas 
+always @(posedge clk) begin
+  {A[4:0], S_esperado[31:0]} = testvectors[vector_ind];
+end
+
+//Testebench de fato, testa bit por bit e verifica se bate com o resultado esperado
+always @(negedge clk)
+	if (~rst) begin 
+		for(int k = 0; k < 32; k++) begin
+			assert (S[k] === S_esperado[k]) 
+			else begin 
+				$error("Linha = %1d",vector_ind," -> y[%1d]",k," = %1d",S[k]," .... y_esperado[%1d]",k," = %1d",S_esperado[k]);
+            erros++;
+        end;
+      end  
+	
+	//Incrementa o vetor de indice, ou seja, pega o proximo valor a ser testado
+	vector_ind = vector_ind + 1;
+	
+    //Verifica se o arquivo de vetores encerrou
+	if(vector_ind == 32) begin
+		$display("\n%1d testes finalizados com %1d erros\n", vector_ind, erros);
+		$finish;
+	end
+ end
+ 
+endmodule

@@ -1,0 +1,62 @@
+`timescale 1ns/10ps
+module shiftleft2_tb();
+
+logic clk,rst;
+logic [31:0] A;
+logic [31:0] S;
+
+logic [31:0] S_esperado;
+
+logic [127:0]vector_ind,erros;
+logic [63:0] testvectors[3:0];
+
+shiftleft2 DUV(
+		.A(A),
+		.S(S)
+		);
+
+always
+    begin
+    clk =1; #10; clk=0; #5;
+    end
+
+initial begin
+
+	$readmemb("shiftleft2_tv.tv",testvectors);
+
+	vector_ind=0; erros=0;
+
+	rst=1; #8; rst=0;
+
+end
+
+
+always @(posedge clk)
+begin
+
+	{A[31:0],S_esperado[31:0]} = testvectors[vector_ind];
+
+end
+
+
+always @(negedge clk)
+if (~rst) begin
+
+	if (S !== S_esperado) begin
+		$display("Erro: entradas= %b",{A});
+		$display("S = %b (%b esperado)",S,S_esperado);
+		erros = erros + 1;
+	end
+	
+	vector_ind = vector_ind + 1;
+	
+	if(testvectors[vector_ind] === 64'bx) begin
+
+		$display("%d testes completados com %d erros", vector_ind, erros);
+
+		$stop;
+	end
+end
+
+
+endmodule

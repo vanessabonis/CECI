@@ -1,0 +1,48 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Thales\Desktop\FLOPSMUX\Mux2\Simulation\ModelSim
+vmux2
+IM<FFVT6aST:DiFDHXAN?N3
+V4:42Wnh=OcQJ[:;]F`0F91
+Z1 dC:\Users\Thales\Desktop\FLOPSMUX\Mux2\Simulation\ModelSim
+w1554207973
+8mux2.vo
+Fmux2.vo
+L0 31
+Z2 OV;L;10.1d;51
+r1
+31
+o-vlog01compat -work work -O0
+!i10b 1
+!s100 a7QSK2KzXnmk26:VB<V[h1
+!s85 0
+!s108 1554207982.836000
+!s107 mux2.vo|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|mux2.vo|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+. -O0
+vmux2_tb
+DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+!i10b 1
+!s100 `:RhI>ci[`5P6<GAGMg2^2
+I0lXMMk;XjEnS80>1>kig^2
+V_I?[5HnX@4AG3KQ4kg1TC1
+!s105 mux2_tb_sv_unit
+S1
+R1
+w1554122180
+8C:/Users/Thales/Desktop/FLOPSMUX/Mux2/Testbench/mux2_tb.sv
+FC:/Users/Thales/Desktop/FLOPSMUX/Mux2/Testbench/mux2_tb.sv
+L0 3
+R2
+r1
+!s85 0
+31
+!s108 1554207983.015000
+!s107 C:/Users/Thales/Desktop/FLOPSMUX/Mux2/Testbench/mux2_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Thales/Desktop/FLOPSMUX/Mux2/Testbench|C:/Users/Thales/Desktop/FLOPSMUX/Mux2/Testbench/mux2_tb.sv|
+!s101 -O0
+o-sv -work work -O0
+!s92 -sv -work work +incdir+C:/Users/Thales/Desktop/FLOPSMUX/Mux2/Testbench -O0

@@ -1,0 +1,53 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Thales\Desktop\ULA_Thales\simulation\modelsim
+vULA_1bit
+Z1 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+I@[dXR>zf^i3I4L?lBbbCR3
+VSA>mTAUQG9>i8_=PmHNGS3
+S1
+Z2 dC:\Users\Thales\Desktop\ULA_Thales\simulation\modelsim
+w1555524827
+8ULA_1bit_6_1200mv_85c_slow.svo
+FULA_1bit_6_1200mv_85c_slow.svo
+L0 31
+Z3 OV;L;10.1d;51
+r1
+31
+Z4 o-sv -work work -O0
+n@u@l@a_1bit
+!i10b 1
+!s100 af5KdG>VIfz;ATmY:_J^<2
+!s105 ULA_1bit_6_1200mv_85c_slow_svo_unit
+!s85 0
+!s108 1555526919.497000
+!s107 ULA_1bit_6_1200mv_85c_slow.svo|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+.|ULA_1bit_6_1200mv_85c_slow.svo|
+!s101 -O0
+!s92 -sv -work work +incdir+. -O0
+vULA_1bit_tb
+R1
+!i10b 1
+!s100 gFU]5UW9ZcT6je]QeJFnk1
+INRF3QMmPM6M_CQMC>UKRa3
+VG<P[UBk[mD5hHMoezU8>g0
+!s105 ULA_1bit_tb_sv_unit
+S1
+R2
+w1555526914
+8C:/Users/Thales/Desktop/ULA_Thales/testbench/ULA_1bit_tb.sv
+FC:/Users/Thales/Desktop/ULA_Thales/testbench/ULA_1bit_tb.sv
+L0 3
+R3
+r1
+!s85 0
+31
+!s108 1555526919.685000
+!s107 C:/Users/Thales/Desktop/ULA_Thales/testbench/ULA_1bit_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Thales/Desktop/ULA_Thales/testbench|C:/Users/Thales/Desktop/ULA_Thales/testbench/ULA_1bit_tb.sv|
+!s101 -O0
+R4
+!s92 -sv -work work +incdir+C:/Users/Thales/Desktop/ULA_Thales/testbench -O0
+n@u@l@a_1bit_tb

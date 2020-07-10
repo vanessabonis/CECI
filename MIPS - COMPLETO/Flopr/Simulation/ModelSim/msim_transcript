@@ -1,0 +1,65 @@
+# Reading C:/altera/13.0/modelsim_ase/tcl/vsim/pref.tcl 
+# do flopr_run_msim_gate_systemverilog.do 
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Copying C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -sv -work work +incdir+. {flopr.svo}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module flopr
+# 
+# Top level modules:
+# 	flopr
+# 
+# vlog -sv -work work +incdir+C:/Users/Thales/Desktop/FLOPSMUX/Flopr/Testbench {C:/Users/Thales/Desktop/FLOPSMUX/Flopr/Testbench/flopr_tb.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module flopr_tb
+# 
+# Top level modules:
+# 	flopr_tb
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc"  flopr_tb
+# vsim +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=\"+acc\" -t 1ps flopr_tb 
+# Loading sv_std.std
+# Loading work.flopr_tb
+# Loading work.flopr
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading altera_ver.dffeas
+# SDF 10.1d Compiler 2012.11 Nov  2 2012
+# 
+# Loading instances from flopr_v.sdo
+# Loading altera_ver.PRIM_GDFF_LOW
+# Loading timing data from flopr_v.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /flopr_tb File: C:/Users/Thales/Desktop/FLOPSMUX/Flopr/Testbench/flopr_tb.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Iniciando Testbench
+# | CLK | RST | D | Q |
+# ---------------
+# | 0 | 1 | 0 | 0 | OK
+# | 1 | 1 | 0 | 0 | OK
+# | 0 | 1 | 1 | 0 | OK
+# | 1 | 1 | 1 | 0 | OK
+# | 0 | 0 | 1 | 0 | OK
+# | 1 | 0 | 1 | 1 | OK
+# | 0 | 0 | 0 | 1 | OK
+# | 1 | 0 | 0 | 0 | OK
+# Testes Efetuados  = 8
+# Erros Encontrados = 0
+# Break in Module flopr_tb at C:/Users/Thales/Desktop/FLOPSMUX/Flopr/Testbench/flopr_tb.sv line 58
+# Simulation Breakpoint: Break in Module flopr_tb at C:/Users/Thales/Desktop/FLOPSMUX/Flopr/Testbench/flopr_tb.sv line 58
+# MACRO ./flopr_run_msim_gate_systemverilog.do PAUSED at line 17

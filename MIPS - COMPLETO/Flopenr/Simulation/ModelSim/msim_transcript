@@ -1,0 +1,73 @@
+# Reading C:/altera/13.0/modelsim_ase/tcl/vsim/pref.tcl 
+# do flopenr_run_msim_gate_verilog.do 
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Copying C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+. {flopenr.vo}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module flopenr
+# 
+# Top level modules:
+# 	flopenr
+# 
+# vlog -sv -work work +incdir+C:/Users/Thales/Desktop/FLOPSMUX/Flopenr/Testbench {C:/Users/Thales/Desktop/FLOPSMUX/Flopenr/Testbench/flopenr_tb.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module flopenr_tb
+# 
+# Top level modules:
+# 	flopenr_tb
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc"  flopenr_tb
+# vsim +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=\"+acc\" -t 1ps flopenr_tb 
+# Loading sv_std.std
+# Loading work.flopenr_tb
+# Loading work.flopenr
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading altera_ver.dffeas
+# SDF 10.1d Compiler 2012.11 Nov  2 2012
+# 
+# Loading instances from flopenr_v.sdo
+# Loading altera_ver.PRIM_GDFF_LOW
+# Loading timing data from flopenr_v.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /flopenr_tb File: C:/Users/Thales/Desktop/FLOPSMUX/Flopenr/Testbench/flopenr_tb.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Iniciando Testbench
+# | CLK | RST | EN | D | Q |
+# ---------------
+# | 0 | 1 | 0 | 0 | 0 | OK
+# | 1 | 1 | 0 | 0 | 0 | OK
+# | 0 | 1 | 1 | 0 | 0 | OK
+# | 1 | 1 | 1 | 0 | 0 | OK
+# | 0 | 1 | 0 | 1 | 0 | OK
+# | 1 | 1 | 0 | 1 | 0 | OK
+# | 0 | 1 | 1 | 1 | 0 | OK
+# | 1 | 1 | 1 | 1 | 0 | OK
+# | 0 | 0 | 0 | 0 | 0 | OK
+# | 1 | 0 | 0 | 0 | 0 | OK
+# | 0 | 0 | 1 | 0 | 0 | OK
+# | 1 | 0 | 1 | 0 | 0 | OK
+# | 0 | 0 | 0 | 1 | 0 | OK
+# | 1 | 0 | 0 | 1 | 0 | OK
+# | 0 | 0 | 1 | 1 | 0 | OK
+# | 1 | 0 | 1 | 1 | 1 | OK
+# Testes Efetuados  = 16
+# Erros Encontrados = 0
+# Break in Module flopenr_tb at C:/Users/Thales/Desktop/FLOPSMUX/Flopenr/Testbench/flopenr_tb.sv line 59
+# Simulation Breakpoint: Break in Module flopenr_tb at C:/Users/Thales/Desktop/FLOPSMUX/Flopenr/Testbench/flopenr_tb.sv line 59
+# MACRO ./flopenr_run_msim_gate_verilog.do PAUSED at line 17

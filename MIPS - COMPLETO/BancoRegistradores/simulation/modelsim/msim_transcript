@@ -1,0 +1,203 @@
+# Reading C:/altera/13.0/modelsim_ase/tcl/vsim/pref.tcl 
+# do bancoRegistradores_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -sv -work work +incdir+C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores {C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores/decoder.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module decoder
+# 
+# Top level modules:
+# 	decoder
+# vlog -sv -work work +incdir+C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores {C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores/flopenr.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module flopenr
+# 
+# Top level modules:
+# 	flopenr
+# vlog -sv -work work +incdir+C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores {C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores/inversor.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module inversor
+# 
+# Top level modules:
+# 	inversor
+# vlog -sv -work work +incdir+C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores {C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores/mux2.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux2
+# 
+# Top level modules:
+# 	mux2
+# vlog -sv -work work +incdir+C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores {C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores/mux4.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux4
+# 
+# Top level modules:
+# 	mux4
+# vlog -sv -work work +incdir+C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores {C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores/mux32.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux32
+# 
+# Top level modules:
+# 	mux32
+# vlog -sv -work work +incdir+C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores {C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores/tristate.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tristate
+# 
+# Top level modules:
+# 	tristate
+# vlog -sv -work work +incdir+C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores {C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores/bancoRegistradores.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module bancoRegistradores
+# 
+# Top level modules:
+# 	bancoRegistradores
+# 
+# vlog -sv -work work +incdir+C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores/testbench {C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores/testbench/bancoRegistradores_tb.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module bancoRegistradores_tb
+# 
+# Top level modules:
+# 	bancoRegistradores_tb
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L rtl_work -L work -voptargs="+acc"  bancoRegistradores_tb
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps bancoRegistradores_tb 
+# Loading sv_std.std
+# Loading work.bancoRegistradores_tb
+# Loading work.bancoRegistradores
+# Loading work.decoder
+# Loading work.mux32
+# Loading work.mux4
+# Loading work.mux2
+# Loading work.tristate
+# Loading work.inversor
+# Loading work.flopenr
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Iniciando Testbench
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 24 of file "bancoRegistradores.tv". (Current address [23], address range [0:22])    : C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores/testbench/bancoRegistradores_tb.sv(16)
+#    Time: 0 ps  Iteration: 0  Instance: /bancoRegistradores_tb
+# Linha com error: 9
+#  RD1 = 0, (1 expected)
+# Linha com error: 10
+#  RD1 = 0, (1 expected)
+# Linha com error: 15
+#  RD2 = 0, (1 expected)
+# Linha com error: 16
+#  RD2 = 0, (1 expected)
+# Testes Efetuados  = 23
+# Erros Encontrados = 4
+# Break in Module bancoRegistradores_tb at C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores/testbench/bancoRegistradores_tb.sv line 74
+# Simulation Breakpoint: Break in Module bancoRegistradores_tb at C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores/testbench/bancoRegistradores_tb.sv line 74
+# MACRO ./bancoRegistradores_run_msim_rtl_verilog.do PAUSED at line 24
+do bancoRegistradores_run_msim_rtl_verilog.do
+# transcript on
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores {C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores/decoder.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module decoder
+# 
+# Top level modules:
+# 	decoder
+# vlog -sv -work work +incdir+C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores {C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores/flopenr.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module flopenr
+# 
+# Top level modules:
+# 	flopenr
+# vlog -sv -work work +incdir+C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores {C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores/inversor.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module inversor
+# 
+# Top level modules:
+# 	inversor
+# vlog -sv -work work +incdir+C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores {C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores/mux2.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux2
+# 
+# Top level modules:
+# 	mux2
+# vlog -sv -work work +incdir+C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores {C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores/mux4.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux4
+# 
+# Top level modules:
+# 	mux4
+# vlog -sv -work work +incdir+C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores {C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores/mux32.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux32
+# 
+# Top level modules:
+# 	mux32
+# vlog -sv -work work +incdir+C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores {C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores/tristate.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tristate
+# 
+# Top level modules:
+# 	tristate
+# vlog -sv -work work +incdir+C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores {C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores/bancoRegistradores.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module bancoRegistradores
+# 
+# Top level modules:
+# 	bancoRegistradores
+# 
+# vlog -sv -work work +incdir+C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores/testbench {C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores/testbench/bancoRegistradores_tb.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module bancoRegistradores_tb
+# 
+# Top level modules:
+# 	bancoRegistradores_tb
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L rtl_work -L work -voptargs="+acc"  bancoRegistradores_tb
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps bancoRegistradores_tb 
+# Loading sv_std.std
+# Loading work.bancoRegistradores_tb
+# Loading work.bancoRegistradores
+# Loading work.decoder
+# Loading work.mux32
+# Loading work.mux4
+# Loading work.mux2
+# Loading work.tristate
+# Loading work.inversor
+# Loading work.flopenr
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Iniciando Testbench
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 25 of file "bancoRegistradores.tv". (Current address [24], address range [0:23])    : C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores/testbench/bancoRegistradores_tb.sv(16)
+#    Time: 0 ps  Iteration: 0  Instance: /bancoRegistradores_tb
+# Linha com error: 9
+#  RD1 = 0, (1 expected)
+# Linha com error: 10
+#  RD1 = 0, (1 expected)
+# Linha com error: 15
+#  RD2 = 0, (1 expected)
+# Linha com error: 16
+#  RD2 = 0, (1 expected)
+# Testes Efetuados  = 24
+# Erros Encontrados = 4
+# Break in Module bancoRegistradores_tb at C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores/testbench/bancoRegistradores_tb.sv line 74
+# Simulation Breakpoint: Break in Module bancoRegistradores_tb at C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores/testbench/bancoRegistradores_tb.sv line 74
+# MACRO ./bancoRegistradores_run_msim_rtl_verilog.do PAUSED at line 24

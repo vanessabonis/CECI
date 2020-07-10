@@ -1,0 +1,129 @@
+|ULA_1bit
+ALUcontrol[0] => ALUcontrol[0].IN1
+ALUcontrol[1] => ALUcontrol[1].IN1
+ALUcontrol[2] => ALUcontrol[2].IN1
+A => A.IN1
+B => andULA.IN0
+B => nandULA.IN0
+B => orULA.IN0
+B => norULA.IN0
+B => xorULA.IN0
+B => addSub.IN0
+cin => cin.IN1
+addSubSignal => addSub.IN1
+less => less.IN1
+set <= OutputSomador.DB_MAX_OUTPUT_PORT_TYPE
+ALUresult <= mux8:muxULA.port9
+cout <= somador1bit:somadorULA.port4
+
+
+|ULA_1bit|somador1bit:somadorULA
+inputA => inputA.IN1
+inputB => inputB.IN1
+cin => cin.IN1
+output_s <= meioSomador:u2.port2
+cout <= u3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA_1bit|somador1bit:somadorULA|meioSomador:u1
+input1 => output_s0.IN0
+input1 => cout_0.IN0
+input2 => output_s0.IN1
+input2 => cout_0.IN1
+output_s0 <= output_s0.DB_MAX_OUTPUT_PORT_TYPE
+cout_0 <= cout_0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA_1bit|somador1bit:somadorULA|meioSomador:u2
+input1 => output_s0.IN0
+input1 => cout_0.IN0
+input2 => output_s0.IN1
+input2 => cout_0.IN1
+output_s0 <= output_s0.DB_MAX_OUTPUT_PORT_TYPE
+cout_0 <= cout_0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA_1bit|mux8:muxULA
+d0 => d0.IN1
+d1 => d1.IN1
+d2 => d2.IN1
+d3 => d3.IN1
+d4 => d4.IN1
+d5 => d5.IN1
+d6 => d6.IN1
+d7 => d7.IN1
+s[0] => s[0].IN2
+s[1] => s[1].IN2
+s[2] => s[2].IN1
+out <= mux2:muxDois.port3
+
+
+|ULA_1bit|mux8:muxULA|mux4:muxZero
+d0 => d0.IN1
+d1 => d1.IN1
+d2 => d2.IN1
+d3 => d3.IN1
+s[0] => s[0].IN2
+s[1] => s[1].IN1
+out <= mux2:muxDois.port3
+
+
+|ULA_1bit|mux8:muxULA|mux4:muxZero|mux2:muxZero
+d0 => out.DATAB
+d1 => out.DATAA
+s => out.OUTPUTSELECT
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA_1bit|mux8:muxULA|mux4:muxZero|mux2:muxUm
+d0 => out.DATAB
+d1 => out.DATAA
+s => out.OUTPUTSELECT
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA_1bit|mux8:muxULA|mux4:muxZero|mux2:muxDois
+d0 => out.DATAB
+d1 => out.DATAA
+s => out.OUTPUTSELECT
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA_1bit|mux8:muxULA|mux4:muxUm
+d0 => d0.IN1
+d1 => d1.IN1
+d2 => d2.IN1
+d3 => d3.IN1
+s[0] => s[0].IN2
+s[1] => s[1].IN1
+out <= mux2:muxDois.port3
+
+
+|ULA_1bit|mux8:muxULA|mux4:muxUm|mux2:muxZero
+d0 => out.DATAB
+d1 => out.DATAA
+s => out.OUTPUTSELECT
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA_1bit|mux8:muxULA|mux4:muxUm|mux2:muxUm
+d0 => out.DATAB
+d1 => out.DATAA
+s => out.OUTPUTSELECT
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA_1bit|mux8:muxULA|mux4:muxUm|mux2:muxDois
+d0 => out.DATAB
+d1 => out.DATAA
+s => out.OUTPUTSELECT
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA_1bit|mux8:muxULA|mux2:muxDois
+d0 => out.DATAB
+d1 => out.DATAA
+s => out.OUTPUTSELECT
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+

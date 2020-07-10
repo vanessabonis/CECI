@@ -1,0 +1,16 @@
+module registradorEnReset(ck, reset_pc, enable, in, out);
+	
+	input logic ck, reset_pc, enable;
+	input logic[31:0] in;
+	output logic[31:0] out;
+	
+	always@(posedge ck or posedge reset_pc) begin
+		if(reset_pc == 1'b1) begin
+			out = 32'b0;
+		end
+		else if(enable == 1'b1) begin
+			out = in;
+		end
+	end
+	
+endmodule

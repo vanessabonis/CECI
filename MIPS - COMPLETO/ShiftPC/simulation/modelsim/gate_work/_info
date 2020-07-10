@@ -1,0 +1,53 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Thales\Desktop\ShiftPC\simulation\modelsim
+vShiftPC
+Z1 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+I?E_n7KKM[lTEAFJhbh7<o3
+VnJ[jn19UR9Kg4@1<nW^CI2
+S1
+Z2 dC:\Users\Thales\Desktop\ShiftPC\simulation\modelsim
+w1554911118
+8ShiftPC_6_1200mv_85c_slow.svo
+FShiftPC_6_1200mv_85c_slow.svo
+L0 31
+Z3 OV;L;10.1d;51
+r1
+31
+Z4 o-sv -work work -O0
+n@shift@p@c
+!i10b 1
+!s100 JV41eilaMfzSHZZ[=LFg20
+!s105 ShiftPC_6_1200mv_85c_slow_svo_unit
+!s85 0
+!s108 1554912166.294000
+!s107 ShiftPC_6_1200mv_85c_slow.svo|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+.|ShiftPC_6_1200mv_85c_slow.svo|
+!s101 -O0
+!s92 -sv -work work +incdir+. -O0
+vShiftPC_tb
+R1
+!i10b 1
+!s100 N;oS2S<6nzW:BWL52_^b[1
+I[aW^IU;Z[m_Z=29kh0;=n0
+V[g4Rb__m<9TdIQj:aLG>U3
+!s105 ShiftPC_tb_sv_unit
+S1
+R2
+w1554912068
+8C:/Users/Thales/Desktop/ShiftPC/testbench/ShiftPC_tb.sv
+FC:/Users/Thales/Desktop/ShiftPC/testbench/ShiftPC_tb.sv
+L0 2
+R3
+r1
+!s85 0
+31
+!s108 1554912166.560000
+!s107 C:/Users/Thales/Desktop/ShiftPC/testbench/ShiftPC_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Thales/Desktop/ShiftPC/testbench|C:/Users/Thales/Desktop/ShiftPC/testbench/ShiftPC_tb.sv|
+!s101 -O0
+R4
+!s92 -sv -work work +incdir+C:/Users/Thales/Desktop/ShiftPC/testbench -O0
+n@shift@p@c_tb

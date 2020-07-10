@@ -1,0 +1,77 @@
+`timescale 1ns/10ps
+
+module bancoRegistradores_tb();
+//(A1, A2, A3, WD3, WE3, ck, reset_banco, RD1, RD2);
+		int counter, errors, aux_error;
+		logic clk, reset_banco;
+		logic A1[5], A2[5];
+		logic [4:0]A3;
+		logic WD3, WE3, RD1, RD2, RD1_esperado, RD2_esperado;
+		logic [32:0]vectors[23];
+		
+		bancoRegistradores duv(.A1(A1), .A2(A2), .A3(A3), .WD3(WD3), .WE3(WE3), .ck(ck), 
+								  .reset_banco(reset_banco), .RD1(RD1), .RD2(RD2));
+		initial begin
+			$display("Iniciando Testbench");
+			$readmemb("bancoRegistradores.tv",vectors);
+			counter = 0; errors = 0;
+			reset_banco = 1;
+			#15;
+			reset_banco = 0;
+			
+		end
+		
+		always begin
+			clk=1; #300; 
+			clk=0; #100; 
+		end		
+		always @(posedge clk)
+			if(~reset_banco) begin
+				{A1[0], A1[1], A1[2], A1[3], A1[4], A2[0], A2[1], A2[2], A2[3], A2[4],
+				A3[4:0], WD3, WE3, clk, reset_banco, RD1_esperado, RD2_esperado} = vectors[counter];
+			end
+		
+		always @(negedge clk)
+			if(~reset_banco) begin
+					aux_error = errors;
+					assert (RD1 === RD1_esperado)
+			else  begin
+			
+					if(RD1_esperado !== 1'bx) begin
+						    $display("Linha com error: %1d", counter + 1);
+							//$display("Error: A1: %b, A2: %b, A3: %b, WD3: %b", A1, A2, A3, WD3); 
+							//$display(" ck: %b, WE3: %b, reset_bank: %b", ck, WE3, reset_banco);
+							$display(" RD1 = %b, (%b expected)", RD1, RD1_esperado);
+							//Mostra mensagem de erro se a sa?da do DUT for diferente da sa?da esperada
+							//$display("Error: input RD1 %d = %b", RD1, );
+							//$display("%d OP??O , output = %b, (%b expected)", s0, y, y_esperado);
+						
+					errors = errors + 1; //Incrementa contador de erros a cada bit errado encontrado
+					end
+			end	
+			
+			assert (RD2 === RD2_esperado) else
+				begin
+					if(RD2_esperado !== 1'bx) begin
+						    $display("Linha com error: %1d", counter + 1);
+							//$display("Error: A1: %b, A2: %b, A3: %b, WD3: %b", A1, A2, A3, WD3); 
+							//$display(" ck: %b, WE3: %b, reset_bank: %b", ck, WE3, reset_banco);
+							$display(" RD2 = %b, (%b expected)", RD2, RD2_esperado);
+							//Mostra mensagem de erro se a sa?da do DUT for diferente da sa?da esperada
+							//$display("Error: input RD1 %d = %b", RD1, );
+							//$display("%d OP??O , output = %b, (%b expected)", s0, y, y_esperado);
+								
+					errors = errors + 1; //Incrementa contador de erros a cada bit errado encontrado
+					end
+			end
+			
+		    counter++;
+			if(counter == $size(vectors)) //Quando os vetores de teste acabarem
+			begin
+				$display("Testes Efetuados  = %0d", counter);
+				$display("Erros Encontrados = %0d", errors);
+				#15
+				$stop;
+			end
+		end
+endmodule

@@ -1,0 +1,42 @@
+# Reading C:/altera/13.0/modelsim_ase/tcl/vsim/pref.tcl 
+# do ShiftPC_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -sv -work work +incdir+C:/Users/Thales/Desktop/ShiftPC {C:/Users/Thales/Desktop/ShiftPC/ShiftPC.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ShiftPC
+# 
+# Top level modules:
+# 	ShiftPC
+# 
+# vlog -sv -work work +incdir+C:/Users/Thales/Desktop/ShiftPC/testbench {C:/Users/Thales/Desktop/ShiftPC/testbench/ShiftPC_tb.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ShiftPC_tb
+# 
+# Top level modules:
+# 	ShiftPC_tb
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L rtl_work -L work -voptargs="+acc"  ShiftPC_tb
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps ShiftPC_tb 
+# Loading sv_std.std
+# Loading work.ShiftPC_tb
+# Loading work.ShiftPC
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+#                    4 testes realizados com                    0 erros
+# Break in Module ShiftPC_tb at C:/Users/Thales/Desktop/ShiftPC/testbench/ShiftPC_tb.sv line 43
+# Simulation Breakpoint: Break in Module ShiftPC_tb at C:/Users/Thales/Desktop/ShiftPC/testbench/ShiftPC_tb.sv line 43
+# MACRO ./ShiftPC_run_msim_rtl_verilog.do PAUSED at line 17

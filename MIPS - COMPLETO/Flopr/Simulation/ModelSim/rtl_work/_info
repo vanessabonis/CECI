@@ -1,0 +1,49 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\aluno\Desktop\Flopr\Simulation\ModelSim
+vflopr
+Z1 DXx6 sv_std 3 std 0 22 :CP]PHbGOHGT_H:3KF`8L2
+IANQH@]NM6Hz8?km1bD@3L3
+VYbXeR?XkDC4_lWY_SNbEO2
+S1
+Z2 dC:\Users\aluno\Desktop\Flopr\Simulation\ModelSim
+w1553412838
+8C:/Users/aluno/Desktop/Flopr/flopr.sv
+FC:/Users/aluno/Desktop/Flopr/flopr.sv
+L0 1
+Z3 OV;L;10.0c;49
+r1
+31
+Z4 o-sv -work work -O0
+!s100 2c6]Ic:_jQB?CGSd88FcX3
+!s105 flopr_sv_unit
+!s85 0
+!s108 1553616159.353000
+!s107 C:/Users/aluno/Desktop/Flopr/flopr.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/aluno/Desktop/Flopr|C:/Users/aluno/Desktop/Flopr/flopr.sv|
+!s101 -O0
+!s92 -sv -work work +incdir+C:/Users/aluno/Desktop/Flopr -O0
+vflopr_tb
+R1
+!s100 2^f5II_O7dQUYze=Pel0j1
+I^1jeT[Bka8?0fZI1aDdh`2
+VMW<JBJ>I02=Mf_V8OeFSg0
+!s105 flopr_tb_sv_unit
+S1
+R2
+w1553615771
+8C:/Users/aluno/Desktop/Flopr/Testbench/flopr_tb.sv
+FC:/Users/aluno/Desktop/Flopr/Testbench/flopr_tb.sv
+L0 2
+R3
+r1
+!s85 0
+31
+!s108 1553616159.400000
+!s107 C:/Users/aluno/Desktop/Flopr/Testbench/flopr_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/aluno/Desktop/Flopr/Testbench|C:/Users/aluno/Desktop/Flopr/Testbench/flopr_tb.sv|
+!s101 -O0
+R4
+!s92 -sv -work work +incdir+C:/Users/aluno/Desktop/Flopr/Testbench -O0

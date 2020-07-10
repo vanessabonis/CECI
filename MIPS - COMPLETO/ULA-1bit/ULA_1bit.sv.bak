@@ -1,0 +1,30 @@
+module ULA_1bit(input logic A, input logic B, input logic add_sub, input logic carry_in, input logic less, 
+				  input logic[2:0]op, output logic ALUresult, output logic cout, output logic out_somador);
+
+	logic out_B;
+	logic out_and;
+	logic out_or;
+	logic out_xor;
+	logic out_nor;
+	
+	assign out_B = B ^ add_sub;
+	assign {cout,out_somador} = A+out_B+carry_in;
+	
+	assign out_and = A&B;
+	assign out_or = A|B;
+	assign out_xor = A^B;
+	assign out_nor = ~(A|B);
+	
+	always_comb begin
+		case(op)
+			3'b000: 	ALUresult = out_and;
+			3'b001: 	ALUresult = out_or;
+			3'b010: 	ALUresult = out_xor;
+			3'b011: 	ALUresult = out_nor;
+			3'b100: 	ALUresult = out_somador;
+			3'b101: 	ALUresult = less;
+			default:	ALUresult = 1'b0;
+		endcase
+	end
+
+endmodule

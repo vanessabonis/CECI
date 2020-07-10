@@ -1,0 +1,2121 @@
+|bancoRegistradores
+A1[4] => mux32:muxA.s[4]
+A1[3] => mux32:muxA.s[3]
+A1[2] => mux32:muxA.s[2]
+A1[1] => mux32:muxA.s[1]
+A1[0] => mux32:muxA.s[0]
+A2[4] => mux32:muxB.s[4]
+A2[3] => mux32:muxB.s[3]
+A2[2] => mux32:muxB.s[2]
+A2[1] => mux32:muxB.s[1]
+A2[0] => mux32:muxB.s[0]
+A3[0] => A3[0].IN1
+A3[1] => A3[1].IN1
+A3[2] => A3[2].IN1
+A3[3] => A3[3].IN1
+A3[4] => A3[4].IN1
+WD3 => WD3.IN32
+WE3 => registrador[0].blocoAND.IN1
+WE3 => registrador[1].blocoAND.IN1
+WE3 => registrador[2].blocoAND.IN1
+WE3 => registrador[3].blocoAND.IN1
+WE3 => registrador[4].blocoAND.IN1
+WE3 => registrador[5].blocoAND.IN1
+WE3 => registrador[6].blocoAND.IN1
+WE3 => registrador[7].blocoAND.IN1
+WE3 => registrador[8].blocoAND.IN1
+WE3 => registrador[9].blocoAND.IN1
+WE3 => registrador[10].blocoAND.IN1
+WE3 => registrador[11].blocoAND.IN1
+WE3 => registrador[12].blocoAND.IN1
+WE3 => registrador[13].blocoAND.IN1
+WE3 => registrador[14].blocoAND.IN1
+WE3 => registrador[15].blocoAND.IN1
+WE3 => registrador[16].blocoAND.IN1
+WE3 => registrador[17].blocoAND.IN1
+WE3 => registrador[18].blocoAND.IN1
+WE3 => registrador[19].blocoAND.IN1
+WE3 => registrador[20].blocoAND.IN1
+WE3 => registrador[21].blocoAND.IN1
+WE3 => registrador[22].blocoAND.IN1
+WE3 => registrador[23].blocoAND.IN1
+WE3 => registrador[24].blocoAND.IN1
+WE3 => registrador[25].blocoAND.IN1
+WE3 => registrador[26].blocoAND.IN1
+WE3 => registrador[27].blocoAND.IN1
+WE3 => registrador[28].blocoAND.IN1
+WE3 => registrador[29].blocoAND.IN1
+WE3 => registrador[30].blocoAND.IN1
+WE3 => registrador[31].blocoAND.IN1
+ck => ck.IN32
+reset_banco => reset_banco.IN32
+RD1 <= mux32:muxA.y
+RD2 <= mux32:muxB.y
+
+
+|bancoRegistradores|decoder:decodificador
+sel[0] => Ram0.RADDR
+sel[1] => Ram0.RADDR1
+sel[2] => Ram0.RADDR2
+sel[3] => Ram0.RADDR3
+sel[4] => Ram0.RADDR4
+Y[0] <= Ram0.DATAOUT
+Y[1] <= Ram0.DATAOUT1
+Y[2] <= Ram0.DATAOUT2
+Y[3] <= Ram0.DATAOUT3
+Y[4] <= Ram0.DATAOUT4
+Y[5] <= Ram0.DATAOUT5
+Y[6] <= Ram0.DATAOUT6
+Y[7] <= Ram0.DATAOUT7
+Y[8] <= Ram0.DATAOUT8
+Y[9] <= Ram0.DATAOUT9
+Y[10] <= Ram0.DATAOUT10
+Y[11] <= Ram0.DATAOUT11
+Y[12] <= Ram0.DATAOUT12
+Y[13] <= Ram0.DATAOUT13
+Y[14] <= Ram0.DATAOUT14
+Y[15] <= Ram0.DATAOUT15
+Y[16] <= Ram0.DATAOUT16
+Y[17] <= Ram0.DATAOUT17
+Y[18] <= Ram0.DATAOUT18
+Y[19] <= Ram0.DATAOUT19
+Y[20] <= Ram0.DATAOUT20
+Y[21] <= Ram0.DATAOUT21
+Y[22] <= Ram0.DATAOUT22
+Y[23] <= Ram0.DATAOUT23
+Y[24] <= Ram0.DATAOUT24
+Y[25] <= Ram0.DATAOUT25
+Y[26] <= Ram0.DATAOUT26
+Y[27] <= Ram0.DATAOUT27
+Y[28] <= Ram0.DATAOUT28
+Y[29] <= Ram0.DATAOUT29
+Y[30] <= Ram0.DATAOUT30
+Y[31] <= Ram0.DATAOUT31
+
+
+|bancoRegistradores|flopenr:registrador[0].registrador
+clk => q~reg0.CLK
+reset => q~reg0.ACLR
+en => q~reg0.ENA
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|flopenr:registrador[1].registrador
+clk => q~reg0.CLK
+reset => q~reg0.ACLR
+en => q~reg0.ENA
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|flopenr:registrador[2].registrador
+clk => q~reg0.CLK
+reset => q~reg0.ACLR
+en => q~reg0.ENA
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|flopenr:registrador[3].registrador
+clk => q~reg0.CLK
+reset => q~reg0.ACLR
+en => q~reg0.ENA
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|flopenr:registrador[4].registrador
+clk => q~reg0.CLK
+reset => q~reg0.ACLR
+en => q~reg0.ENA
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|flopenr:registrador[5].registrador
+clk => q~reg0.CLK
+reset => q~reg0.ACLR
+en => q~reg0.ENA
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|flopenr:registrador[6].registrador
+clk => q~reg0.CLK
+reset => q~reg0.ACLR
+en => q~reg0.ENA
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|flopenr:registrador[7].registrador
+clk => q~reg0.CLK
+reset => q~reg0.ACLR
+en => q~reg0.ENA
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|flopenr:registrador[8].registrador
+clk => q~reg0.CLK
+reset => q~reg0.ACLR
+en => q~reg0.ENA
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|flopenr:registrador[9].registrador
+clk => q~reg0.CLK
+reset => q~reg0.ACLR
+en => q~reg0.ENA
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|flopenr:registrador[10].registrador
+clk => q~reg0.CLK
+reset => q~reg0.ACLR
+en => q~reg0.ENA
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|flopenr:registrador[11].registrador
+clk => q~reg0.CLK
+reset => q~reg0.ACLR
+en => q~reg0.ENA
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|flopenr:registrador[12].registrador
+clk => q~reg0.CLK
+reset => q~reg0.ACLR
+en => q~reg0.ENA
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|flopenr:registrador[13].registrador
+clk => q~reg0.CLK
+reset => q~reg0.ACLR
+en => q~reg0.ENA
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|flopenr:registrador[14].registrador
+clk => q~reg0.CLK
+reset => q~reg0.ACLR
+en => q~reg0.ENA
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|flopenr:registrador[15].registrador
+clk => q~reg0.CLK
+reset => q~reg0.ACLR
+en => q~reg0.ENA
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|flopenr:registrador[16].registrador
+clk => q~reg0.CLK
+reset => q~reg0.ACLR
+en => q~reg0.ENA
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|flopenr:registrador[17].registrador
+clk => q~reg0.CLK
+reset => q~reg0.ACLR
+en => q~reg0.ENA
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|flopenr:registrador[18].registrador
+clk => q~reg0.CLK
+reset => q~reg0.ACLR
+en => q~reg0.ENA
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|flopenr:registrador[19].registrador
+clk => q~reg0.CLK
+reset => q~reg0.ACLR
+en => q~reg0.ENA
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|flopenr:registrador[20].registrador
+clk => q~reg0.CLK
+reset => q~reg0.ACLR
+en => q~reg0.ENA
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|flopenr:registrador[21].registrador
+clk => q~reg0.CLK
+reset => q~reg0.ACLR
+en => q~reg0.ENA
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|flopenr:registrador[22].registrador
+clk => q~reg0.CLK
+reset => q~reg0.ACLR
+en => q~reg0.ENA
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|flopenr:registrador[23].registrador
+clk => q~reg0.CLK
+reset => q~reg0.ACLR
+en => q~reg0.ENA
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|flopenr:registrador[24].registrador
+clk => q~reg0.CLK
+reset => q~reg0.ACLR
+en => q~reg0.ENA
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|flopenr:registrador[25].registrador
+clk => q~reg0.CLK
+reset => q~reg0.ACLR
+en => q~reg0.ENA
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|flopenr:registrador[26].registrador
+clk => q~reg0.CLK
+reset => q~reg0.ACLR
+en => q~reg0.ENA
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|flopenr:registrador[27].registrador
+clk => q~reg0.CLK
+reset => q~reg0.ACLR
+en => q~reg0.ENA
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|flopenr:registrador[28].registrador
+clk => q~reg0.CLK
+reset => q~reg0.ACLR
+en => q~reg0.ENA
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|flopenr:registrador[29].registrador
+clk => q~reg0.CLK
+reset => q~reg0.ACLR
+en => q~reg0.ENA
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|flopenr:registrador[30].registrador
+clk => q~reg0.CLK
+reset => q~reg0.ACLR
+en => q~reg0.ENA
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|flopenr:registrador[31].registrador
+clk => q~reg0.CLK
+reset => q~reg0.ACLR
+en => q~reg0.ENA
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA
+d[31] => d[31].IN1
+d[30] => d[30].IN1
+d[29] => d[29].IN1
+d[28] => d[28].IN1
+d[27] => d[27].IN1
+d[26] => d[26].IN1
+d[25] => d[25].IN1
+d[24] => d[24].IN1
+d[23] => d[23].IN1
+d[22] => d[22].IN1
+d[21] => d[21].IN1
+d[20] => d[20].IN1
+d[19] => d[19].IN1
+d[18] => d[18].IN1
+d[17] => d[17].IN1
+d[16] => d[16].IN1
+d[15] => d[15].IN1
+d[14] => d[14].IN1
+d[13] => d[13].IN1
+d[12] => d[12].IN1
+d[11] => d[11].IN1
+d[10] => d[10].IN1
+d[9] => d[9].IN1
+d[8] => d[8].IN1
+d[7] => d[7].IN1
+d[6] => d[6].IN1
+d[5] => d[5].IN1
+d[4] => d[4].IN1
+d[3] => d[3].IN1
+d[2] => d[2].IN1
+d[1] => d[1].IN1
+d[0] => d[0].IN1
+s[4] => s[4].IN1
+s[3] => s[3].IN2
+s[2] => s[2].IN2
+s[1] => s[1].IN8
+s[0] => s[0].IN8
+y <= mux2:m11.port3
+
+
+|bancoRegistradores|mux32:muxA|mux4:m1
+d0 => d0.IN1
+d1 => d1.IN1
+d2 => d2.IN1
+d3 => d3.IN1
+s0 => s0.IN2
+s1 => s1.IN1
+y <= mux2:finalmux.port3
+
+
+|bancoRegistradores|mux32:muxA|mux4:m1|mux2:lowmux
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m1|mux2:lowmux|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m1|mux2:lowmux|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m1|mux2:lowmux|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m1|mux2:highmux
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m1|mux2:highmux|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m1|mux2:highmux|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m1|mux2:highmux|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m1|mux2:finalmux
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m1|mux2:finalmux|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m1|mux2:finalmux|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m1|mux2:finalmux|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m2
+d0 => d0.IN1
+d1 => d1.IN1
+d2 => d2.IN1
+d3 => d3.IN1
+s0 => s0.IN2
+s1 => s1.IN1
+y <= mux2:finalmux.port3
+
+
+|bancoRegistradores|mux32:muxA|mux4:m2|mux2:lowmux
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m2|mux2:lowmux|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m2|mux2:lowmux|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m2|mux2:lowmux|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m2|mux2:highmux
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m2|mux2:highmux|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m2|mux2:highmux|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m2|mux2:highmux|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m2|mux2:finalmux
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m2|mux2:finalmux|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m2|mux2:finalmux|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m2|mux2:finalmux|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m3
+d0 => d0.IN1
+d1 => d1.IN1
+d2 => d2.IN1
+d3 => d3.IN1
+s0 => s0.IN2
+s1 => s1.IN1
+y <= mux2:finalmux.port3
+
+
+|bancoRegistradores|mux32:muxA|mux4:m3|mux2:lowmux
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m3|mux2:lowmux|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m3|mux2:lowmux|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m3|mux2:lowmux|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m3|mux2:highmux
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m3|mux2:highmux|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m3|mux2:highmux|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m3|mux2:highmux|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m3|mux2:finalmux
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m3|mux2:finalmux|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m3|mux2:finalmux|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m3|mux2:finalmux|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m4
+d0 => d0.IN1
+d1 => d1.IN1
+d2 => d2.IN1
+d3 => d3.IN1
+s0 => s0.IN2
+s1 => s1.IN1
+y <= mux2:finalmux.port3
+
+
+|bancoRegistradores|mux32:muxA|mux4:m4|mux2:lowmux
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m4|mux2:lowmux|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m4|mux2:lowmux|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m4|mux2:lowmux|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m4|mux2:highmux
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m4|mux2:highmux|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m4|mux2:highmux|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m4|mux2:highmux|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m4|mux2:finalmux
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m4|mux2:finalmux|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m4|mux2:finalmux|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m4|mux2:finalmux|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m5
+d0 => d0.IN1
+d1 => d1.IN1
+d2 => d2.IN1
+d3 => d3.IN1
+s0 => s0.IN2
+s1 => s1.IN1
+y <= mux2:finalmux.port3
+
+
+|bancoRegistradores|mux32:muxA|mux4:m5|mux2:lowmux
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m5|mux2:lowmux|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m5|mux2:lowmux|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m5|mux2:lowmux|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m5|mux2:highmux
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m5|mux2:highmux|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m5|mux2:highmux|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m5|mux2:highmux|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m5|mux2:finalmux
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m5|mux2:finalmux|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m5|mux2:finalmux|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m5|mux2:finalmux|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m6
+d0 => d0.IN1
+d1 => d1.IN1
+d2 => d2.IN1
+d3 => d3.IN1
+s0 => s0.IN2
+s1 => s1.IN1
+y <= mux2:finalmux.port3
+
+
+|bancoRegistradores|mux32:muxA|mux4:m6|mux2:lowmux
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m6|mux2:lowmux|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m6|mux2:lowmux|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m6|mux2:lowmux|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m6|mux2:highmux
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m6|mux2:highmux|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m6|mux2:highmux|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m6|mux2:highmux|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m6|mux2:finalmux
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m6|mux2:finalmux|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m6|mux2:finalmux|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m6|mux2:finalmux|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m7
+d0 => d0.IN1
+d1 => d1.IN1
+d2 => d2.IN1
+d3 => d3.IN1
+s0 => s0.IN2
+s1 => s1.IN1
+y <= mux2:finalmux.port3
+
+
+|bancoRegistradores|mux32:muxA|mux4:m7|mux2:lowmux
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m7|mux2:lowmux|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m7|mux2:lowmux|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m7|mux2:lowmux|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m7|mux2:highmux
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m7|mux2:highmux|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m7|mux2:highmux|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m7|mux2:highmux|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m7|mux2:finalmux
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m7|mux2:finalmux|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m7|mux2:finalmux|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m7|mux2:finalmux|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m8
+d0 => d0.IN1
+d1 => d1.IN1
+d2 => d2.IN1
+d3 => d3.IN1
+s0 => s0.IN2
+s1 => s1.IN1
+y <= mux2:finalmux.port3
+
+
+|bancoRegistradores|mux32:muxA|mux4:m8|mux2:lowmux
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m8|mux2:lowmux|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m8|mux2:lowmux|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m8|mux2:lowmux|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m8|mux2:highmux
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m8|mux2:highmux|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m8|mux2:highmux|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m8|mux2:highmux|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m8|mux2:finalmux
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m8|mux2:finalmux|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m8|mux2:finalmux|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m8|mux2:finalmux|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m9
+d0 => d0.IN1
+d1 => d1.IN1
+d2 => d2.IN1
+d3 => d3.IN1
+s0 => s0.IN2
+s1 => s1.IN1
+y <= mux2:finalmux.port3
+
+
+|bancoRegistradores|mux32:muxA|mux4:m9|mux2:lowmux
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m9|mux2:lowmux|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m9|mux2:lowmux|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m9|mux2:lowmux|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m9|mux2:highmux
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m9|mux2:highmux|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m9|mux2:highmux|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m9|mux2:highmux|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m9|mux2:finalmux
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m9|mux2:finalmux|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m9|mux2:finalmux|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m9|mux2:finalmux|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m10
+d0 => d0.IN1
+d1 => d1.IN1
+d2 => d2.IN1
+d3 => d3.IN1
+s0 => s0.IN2
+s1 => s1.IN1
+y <= mux2:finalmux.port3
+
+
+|bancoRegistradores|mux32:muxA|mux4:m10|mux2:lowmux
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m10|mux2:lowmux|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m10|mux2:lowmux|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m10|mux2:lowmux|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m10|mux2:highmux
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m10|mux2:highmux|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m10|mux2:highmux|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m10|mux2:highmux|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m10|mux2:finalmux
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m10|mux2:finalmux|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m10|mux2:finalmux|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux4:m10|mux2:finalmux|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux2:m11
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux2:m11|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux2:m11|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxA|mux2:m11|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB
+d[31] => d[31].IN1
+d[30] => d[30].IN1
+d[29] => d[29].IN1
+d[28] => d[28].IN1
+d[27] => d[27].IN1
+d[26] => d[26].IN1
+d[25] => d[25].IN1
+d[24] => d[24].IN1
+d[23] => d[23].IN1
+d[22] => d[22].IN1
+d[21] => d[21].IN1
+d[20] => d[20].IN1
+d[19] => d[19].IN1
+d[18] => d[18].IN1
+d[17] => d[17].IN1
+d[16] => d[16].IN1
+d[15] => d[15].IN1
+d[14] => d[14].IN1
+d[13] => d[13].IN1
+d[12] => d[12].IN1
+d[11] => d[11].IN1
+d[10] => d[10].IN1
+d[9] => d[9].IN1
+d[8] => d[8].IN1
+d[7] => d[7].IN1
+d[6] => d[6].IN1
+d[5] => d[5].IN1
+d[4] => d[4].IN1
+d[3] => d[3].IN1
+d[2] => d[2].IN1
+d[1] => d[1].IN1
+d[0] => d[0].IN1
+s[4] => s[4].IN1
+s[3] => s[3].IN2
+s[2] => s[2].IN2
+s[1] => s[1].IN8
+s[0] => s[0].IN8
+y <= mux2:m11.port3
+
+
+|bancoRegistradores|mux32:muxB|mux4:m1
+d0 => d0.IN1
+d1 => d1.IN1
+d2 => d2.IN1
+d3 => d3.IN1
+s0 => s0.IN2
+s1 => s1.IN1
+y <= mux2:finalmux.port3
+
+
+|bancoRegistradores|mux32:muxB|mux4:m1|mux2:lowmux
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m1|mux2:lowmux|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m1|mux2:lowmux|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m1|mux2:lowmux|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m1|mux2:highmux
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m1|mux2:highmux|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m1|mux2:highmux|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m1|mux2:highmux|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m1|mux2:finalmux
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m1|mux2:finalmux|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m1|mux2:finalmux|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m1|mux2:finalmux|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m2
+d0 => d0.IN1
+d1 => d1.IN1
+d2 => d2.IN1
+d3 => d3.IN1
+s0 => s0.IN2
+s1 => s1.IN1
+y <= mux2:finalmux.port3
+
+
+|bancoRegistradores|mux32:muxB|mux4:m2|mux2:lowmux
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m2|mux2:lowmux|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m2|mux2:lowmux|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m2|mux2:lowmux|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m2|mux2:highmux
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m2|mux2:highmux|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m2|mux2:highmux|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m2|mux2:highmux|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m2|mux2:finalmux
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m2|mux2:finalmux|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m2|mux2:finalmux|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m2|mux2:finalmux|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m3
+d0 => d0.IN1
+d1 => d1.IN1
+d2 => d2.IN1
+d3 => d3.IN1
+s0 => s0.IN2
+s1 => s1.IN1
+y <= mux2:finalmux.port3
+
+
+|bancoRegistradores|mux32:muxB|mux4:m3|mux2:lowmux
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m3|mux2:lowmux|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m3|mux2:lowmux|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m3|mux2:lowmux|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m3|mux2:highmux
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m3|mux2:highmux|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m3|mux2:highmux|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m3|mux2:highmux|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m3|mux2:finalmux
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m3|mux2:finalmux|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m3|mux2:finalmux|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m3|mux2:finalmux|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m4
+d0 => d0.IN1
+d1 => d1.IN1
+d2 => d2.IN1
+d3 => d3.IN1
+s0 => s0.IN2
+s1 => s1.IN1
+y <= mux2:finalmux.port3
+
+
+|bancoRegistradores|mux32:muxB|mux4:m4|mux2:lowmux
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m4|mux2:lowmux|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m4|mux2:lowmux|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m4|mux2:lowmux|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m4|mux2:highmux
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m4|mux2:highmux|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m4|mux2:highmux|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m4|mux2:highmux|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m4|mux2:finalmux
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m4|mux2:finalmux|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m4|mux2:finalmux|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m4|mux2:finalmux|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m5
+d0 => d0.IN1
+d1 => d1.IN1
+d2 => d2.IN1
+d3 => d3.IN1
+s0 => s0.IN2
+s1 => s1.IN1
+y <= mux2:finalmux.port3
+
+
+|bancoRegistradores|mux32:muxB|mux4:m5|mux2:lowmux
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m5|mux2:lowmux|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m5|mux2:lowmux|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m5|mux2:lowmux|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m5|mux2:highmux
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m5|mux2:highmux|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m5|mux2:highmux|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m5|mux2:highmux|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m5|mux2:finalmux
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m5|mux2:finalmux|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m5|mux2:finalmux|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m5|mux2:finalmux|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m6
+d0 => d0.IN1
+d1 => d1.IN1
+d2 => d2.IN1
+d3 => d3.IN1
+s0 => s0.IN2
+s1 => s1.IN1
+y <= mux2:finalmux.port3
+
+
+|bancoRegistradores|mux32:muxB|mux4:m6|mux2:lowmux
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m6|mux2:lowmux|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m6|mux2:lowmux|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m6|mux2:lowmux|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m6|mux2:highmux
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m6|mux2:highmux|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m6|mux2:highmux|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m6|mux2:highmux|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m6|mux2:finalmux
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m6|mux2:finalmux|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m6|mux2:finalmux|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m6|mux2:finalmux|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m7
+d0 => d0.IN1
+d1 => d1.IN1
+d2 => d2.IN1
+d3 => d3.IN1
+s0 => s0.IN2
+s1 => s1.IN1
+y <= mux2:finalmux.port3
+
+
+|bancoRegistradores|mux32:muxB|mux4:m7|mux2:lowmux
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m7|mux2:lowmux|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m7|mux2:lowmux|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m7|mux2:lowmux|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m7|mux2:highmux
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m7|mux2:highmux|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m7|mux2:highmux|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m7|mux2:highmux|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m7|mux2:finalmux
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m7|mux2:finalmux|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m7|mux2:finalmux|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m7|mux2:finalmux|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m8
+d0 => d0.IN1
+d1 => d1.IN1
+d2 => d2.IN1
+d3 => d3.IN1
+s0 => s0.IN2
+s1 => s1.IN1
+y <= mux2:finalmux.port3
+
+
+|bancoRegistradores|mux32:muxB|mux4:m8|mux2:lowmux
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m8|mux2:lowmux|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m8|mux2:lowmux|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m8|mux2:lowmux|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m8|mux2:highmux
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m8|mux2:highmux|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m8|mux2:highmux|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m8|mux2:highmux|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m8|mux2:finalmux
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m8|mux2:finalmux|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m8|mux2:finalmux|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m8|mux2:finalmux|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m9
+d0 => d0.IN1
+d1 => d1.IN1
+d2 => d2.IN1
+d3 => d3.IN1
+s0 => s0.IN2
+s1 => s1.IN1
+y <= mux2:finalmux.port3
+
+
+|bancoRegistradores|mux32:muxB|mux4:m9|mux2:lowmux
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m9|mux2:lowmux|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m9|mux2:lowmux|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m9|mux2:lowmux|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m9|mux2:highmux
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m9|mux2:highmux|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m9|mux2:highmux|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m9|mux2:highmux|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m9|mux2:finalmux
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m9|mux2:finalmux|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m9|mux2:finalmux|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m9|mux2:finalmux|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m10
+d0 => d0.IN1
+d1 => d1.IN1
+d2 => d2.IN1
+d3 => d3.IN1
+s0 => s0.IN2
+s1 => s1.IN1
+y <= mux2:finalmux.port3
+
+
+|bancoRegistradores|mux32:muxB|mux4:m10|mux2:lowmux
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m10|mux2:lowmux|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m10|mux2:lowmux|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m10|mux2:lowmux|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m10|mux2:highmux
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m10|mux2:highmux|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m10|mux2:highmux|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m10|mux2:highmux|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m10|mux2:finalmux
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m10|mux2:finalmux|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m10|mux2:finalmux|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux4:m10|mux2:finalmux|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux2:m11
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux2:m11|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux2:m11|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bancoRegistradores|mux32:muxB|mux2:m11|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,144 @@
+# Reading C:/altera/13.0/modelsim_ase/tcl/vsim/pref.tcl 
+# do ULA_1bit_run_msim_gate_systemverilog.do 
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Copying C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -sv -work work +incdir+. {ULA_1bit_6_1200mv_85c_slow.svo}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ULA_1bit
+# 
+# Top level modules:
+# 	ULA_1bit
+# 
+# vlog -sv -work work +incdir+C:/Users/Thales/Desktop/ULA_Thales/testbench {C:/Users/Thales/Desktop/ULA_Thales/testbench/ULA_1bit_tb.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ULA_1bit_tb
+# 
+# Top level modules:
+# 	ULA_1bit_tb
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_mf_ver -L altera_ver -L lpm_ver -L sgate_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L gate_work -L work -voptargs="+acc"  ULA_1bit_tb
+# vsim +transport_int_delays +transport_path_delays -L altera_mf_ver -L altera_ver -L lpm_ver -L sgate_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L gate_work -L work -voptargs=\"+acc\" -t 1ps ULA_1bit_tb 
+# Loading sv_std.std
+# Loading work.ULA_1bit_tb
+# Loading work.ULA_1bit
+# Loading cycloneiv_ver.cycloneiv_io_ibuf
+# Loading cycloneiv_ver.cycloneiv_io_obuf
+# Loading cycloneiv_ver.cycloneiv_lcell_comb
+# SDF 10.1d Compiler 2012.11 Nov  2 2012
+# 
+# Loading instances from ULA_1bit_6_1200mv_85c_v_slow.sdo
+# ** Warning: (vsim-3017) C:/Users/Thales/Desktop/ULA_Thales/testbench/ULA_1bit_tb.sv(15): [TFMPC] - Too few port connections. Expected 9, found 6.
+# 
+#         Region: /ULA_1bit_tb/duv
+# ** Warning: (vsim-3722) C:/Users/Thales/Desktop/ULA_Thales/testbench/ULA_1bit_tb.sv(15): [TFMPC] - Missing connection for port 'less'.
+# 
+# ** Warning: (vsim-3722) C:/Users/Thales/Desktop/ULA_Thales/testbench/ULA_1bit_tb.sv(15): [TFMPC] - Missing connection for port 'set'.
+# 
+# ** Warning: (vsim-3722) C:/Users/Thales/Desktop/ULA_Thales/testbench/ULA_1bit_tb.sv(15): [TFMPC] - Missing connection for port 'cout'.
+# 
+# Loading timing data from ULA_1bit_6_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /ULA_1bit_tb File: C:/Users/Thales/Desktop/ULA_Thales/testbench/ULA_1bit_tb.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Line with error: 1
+# Error: A: 0 B: 0
+#  output = x, (0 expected)
+# Line with error: 2
+# Error: A: 0 B: 0
+#  output = 0, (1 expected)
+# Line with error: 3
+# Error: A: 0 B: 1
+#  output = 0, (1 expected)
+# Line with error: 4
+# Error: A: 0 B: 1
+#  output = 1, (0 expected)
+# Line with error: 6
+# Error: A: 1 B: 0
+#  output = 1, (0 expected)
+# Line with error: 7
+# Error: A: 1 B: 1
+#  output = 1, (0 expected)
+# Line with error: 8
+# Error: A: 1 B: 1
+#  output = 0, (1 expected)
+#         28 testes finalizados com          7 erros
+# ** Note: $finish    : C:/Users/Thales/Desktop/ULA_Thales/testbench/ULA_1bit_tb.sv(50)
+#    Time: 415 ns  Iteration: 1  Instance: /ULA_1bit_tb
+# 1
+# Break in Module ULA_1bit_tb at C:/Users/Thales/Desktop/ULA_Thales/testbench/ULA_1bit_tb.sv line 50
+# Simulation Breakpoint: 1
+# Break in Module ULA_1bit_tb at C:/Users/Thales/Desktop/ULA_Thales/testbench/ULA_1bit_tb.sv line 50
+# MACRO ./ULA_1bit_run_msim_gate_systemverilog.do PAUSED at line 17
+do ULA_1bit_run_msim_gate_systemverilog.do
+# transcript on
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+. {ULA_1bit_6_1200mv_85c_slow.svo}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ULA_1bit
+# 
+# Top level modules:
+# 	ULA_1bit
+# 
+# vlog -sv -work work +incdir+C:/Users/Thales/Desktop/ULA_Thales/testbench {C:/Users/Thales/Desktop/ULA_Thales/testbench/ULA_1bit_tb.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ULA_1bit_tb
+# 
+# Top level modules:
+# 	ULA_1bit_tb
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_mf_ver -L altera_ver -L lpm_ver -L sgate_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L gate_work -L work -voptargs="+acc"  ULA_1bit_tb
+# vsim +transport_int_delays +transport_path_delays -L altera_mf_ver -L altera_ver -L lpm_ver -L sgate_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L gate_work -L work -voptargs=\"+acc\" -t 1ps ULA_1bit_tb 
+# Loading sv_std.std
+# Loading work.ULA_1bit_tb
+# Loading work.ULA_1bit
+# Loading cycloneiv_ver.cycloneiv_io_ibuf
+# Loading cycloneiv_ver.cycloneiv_io_obuf
+# Loading cycloneiv_ver.cycloneiv_lcell_comb
+# Loading instances from ULA_1bit_6_1200mv_85c_v_slow.sdo
+# ** Warning: (vsim-3017) C:/Users/Thales/Desktop/ULA_Thales/testbench/ULA_1bit_tb.sv(15): [TFMPC] - Too few port connections. Expected 9, found 6.
+# 
+#         Region: /ULA_1bit_tb/duv
+# ** Warning: (vsim-3722) C:/Users/Thales/Desktop/ULA_Thales/testbench/ULA_1bit_tb.sv(15): [TFMPC] - Missing connection for port 'less'.
+# 
+# ** Warning: (vsim-3722) C:/Users/Thales/Desktop/ULA_Thales/testbench/ULA_1bit_tb.sv(15): [TFMPC] - Missing connection for port 'set'.
+# 
+# ** Warning: (vsim-3722) C:/Users/Thales/Desktop/ULA_Thales/testbench/ULA_1bit_tb.sv(15): [TFMPC] - Missing connection for port 'cout'.
+# 
+# Loading timing data from ULA_1bit_6_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /ULA_1bit_tb File: C:/Users/Thales/Desktop/ULA_Thales/testbench/ULA_1bit_tb.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+#         28 testes finalizados com          0 erros
+# ** Note: $finish    : C:/Users/Thales/Desktop/ULA_Thales/testbench/ULA_1bit_tb.sv(50)
+#    Time: 555 ns  Iteration: 1  Instance: /ULA_1bit_tb
+# 1
+# Break in Module ULA_1bit_tb at C:/Users/Thales/Desktop/ULA_Thales/testbench/ULA_1bit_tb.sv line 50
+# Simulation Breakpoint: 1
+# Break in Module ULA_1bit_tb at C:/Users/Thales/Desktop/ULA_Thales/testbench/ULA_1bit_tb.sv line 50
+# MACRO ./ULA_1bit_run_msim_gate_systemverilog.do PAUSED at line 17

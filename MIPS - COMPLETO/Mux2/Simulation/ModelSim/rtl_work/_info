@@ -1,0 +1,93 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\aluno\Desktop\Entrega 2\Mux2\Simulation\ModelSim
+vinversor
+Z1 DXx6 sv_std 3 std 0 22 :CP]PHbGOHGT_H:3KF`8L2
+I<57kZ4fS[KP=1M[JU?mFO3
+VK9C;<dDEdeKN0OH61L[:Q1
+S1
+Z2 dC:\Users\aluno\Desktop\Entrega 2\Mux2\Simulation\ModelSim
+w1553633326
+8C:/Users/aluno/Desktop/Entrega 2/Mux2/inversor.sv
+FC:/Users/aluno/Desktop/Entrega 2/Mux2/inversor.sv
+L0 1
+Z3 OV;L;10.0c;49
+r1
+31
+Z4 o-sv -work work -O0
+Z5 !s92 -sv -work work {+incdir+C:/Users/aluno/Desktop/Entrega 2/Mux2} -O0
+!s100 AAX<5L]9CC658Z1STzL3Z0
+!s105 inversor_sv_unit
+!s85 0
+!s108 1553633385.723000
+!s107 C:/Users/aluno/Desktop/Entrega 2/Mux2/inversor.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/aluno/Desktop/Entrega 2/Mux2|C:/Users/aluno/Desktop/Entrega 2/Mux2/inversor.sv|
+!s101 -O0
+vmux2
+R1
+IZ9n<LgOa0g;c]HKaiZWk]1
+V4:42Wnh=OcQJ[:;]F`0F91
+S1
+R2
+w1553632935
+8C:/Users/aluno/Desktop/Entrega 2/Mux2/mux2.sv
+FC:/Users/aluno/Desktop/Entrega 2/Mux2/mux2.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+!s100 <5bQ=7DJ`J^G>g>;:Y[fL2
+!s105 mux2_sv_unit
+!s85 0
+!s108 1553633385.801000
+!s107 C:/Users/aluno/Desktop/Entrega 2/Mux2/mux2.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/aluno/Desktop/Entrega 2/Mux2|C:/Users/aluno/Desktop/Entrega 2/Mux2/mux2.sv|
+!s101 -O0
+vmux2_tb
+R1
+!s100 ?l0W5TNQnGJaE9=`USDK[1
+IlS9fRJ8ZV8YERCDbUhK:40
+V_I?[5HnX@4AG3KQ4kg1TC1
+!s105 mux2_tb_sv_unit
+S1
+R2
+w1553633375
+8C:/Users/aluno/Desktop/Entrega 2/Mux2/Testbench/mux2_tb.sv
+FC:/Users/aluno/Desktop/Entrega 2/Mux2/Testbench/mux2_tb.sv
+L0 3
+R3
+r1
+!s85 0
+31
+!s108 1553633385.832000
+!s107 C:/Users/aluno/Desktop/Entrega 2/Mux2/Testbench/mux2_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/aluno/Desktop/Entrega 2/Mux2/Testbench|C:/Users/aluno/Desktop/Entrega 2/Mux2/Testbench/mux2_tb.sv|
+!s101 -O0
+R4
+!s92 -sv -work work {+incdir+C:/Users/aluno/Desktop/Entrega 2/Mux2/Testbench} -O0
+vtristate
+R1
+IA<VeF0>_5ij`hh0h7P5;M2
+VRec>Y2aHg`5_EGQ7YU:J70
+S1
+R2
+w1553632881
+8C:/Users/aluno/Desktop/Entrega 2/Mux2/tristate.sv
+FC:/Users/aluno/Desktop/Entrega 2/Mux2/tristate.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+!s100 4RHDY3fo>:Ucn1bcY:d3n0
+!s105 tristate_sv_unit
+!s85 0
+!s108 1553633385.754000
+!s107 C:/Users/aluno/Desktop/Entrega 2/Mux2/tristate.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/aluno/Desktop/Entrega 2/Mux2|C:/Users/aluno/Desktop/Entrega 2/Mux2/tristate.sv|
+!s101 -O0

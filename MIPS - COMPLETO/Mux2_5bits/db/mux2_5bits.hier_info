@@ -1,0 +1,23 @@
+|mux2_5bits
+d0[0] => out.DATAB
+d0[1] => out.DATAB
+d0[2] => out.DATAB
+d0[3] => out.DATAB
+d0[4] => out.DATAB
+d1[0] => out.DATAA
+d1[1] => out.DATAA
+d1[2] => out.DATAA
+d1[3] => out.DATAA
+d1[4] => out.DATAA
+s => out.OUTPUTSELECT
+s => out.OUTPUTSELECT
+s => out.OUTPUTSELECT
+s => out.OUTPUTSELECT
+s => out.OUTPUTSELECT
+out[0] << out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] << out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] << out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] << out.DB_MAX_OUTPUT_PORT_TYPE
+out[4] << out.DB_MAX_OUTPUT_PORT_TYPE
+
+

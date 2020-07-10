@@ -1,0 +1,48 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Thales\Desktop\FLOPSMUX\Flopenr\Simulation\ModelSim
+vflopenr
+IF7N8O`34FoElelm993A>30
+VmEVPe?[3Bd];NoWcd8TlK1
+Z1 dC:\Users\Thales\Desktop\FLOPSMUX\Flopenr\Simulation\ModelSim
+w1554207803
+8flopenr.vo
+Fflopenr.vo
+L0 31
+Z2 OV;L;10.1d;51
+r1
+31
+o-vlog01compat -work work -O0
+!i10b 1
+!s100 YOa11LF3TJ@>[5`DA[UeO0
+!s85 0
+!s108 1554207812.458000
+!s107 flopenr.vo|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|flopenr.vo|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+. -O0
+vflopenr_tb
+DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+!i10b 1
+!s100 K;[C;JJ1Ag4hB7MzodmUR2
+I7[?M:8glX>4k[K0Om1;h22
+V2d=3g^4MlfFeoI_e3Ie6G1
+!s105 flopenr_tb_sv_unit
+S1
+R1
+w1553790359
+8C:/Users/Thales/Desktop/FLOPSMUX/Flopenr/Testbench/flopenr_tb.sv
+FC:/Users/Thales/Desktop/FLOPSMUX/Flopenr/Testbench/flopenr_tb.sv
+L0 2
+R2
+r1
+!s85 0
+31
+!s108 1554207812.598000
+!s107 C:/Users/Thales/Desktop/FLOPSMUX/Flopenr/Testbench/flopenr_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Thales/Desktop/FLOPSMUX/Flopenr/Testbench|C:/Users/Thales/Desktop/FLOPSMUX/Flopenr/Testbench/flopenr_tb.sv|
+!s101 -O0
+o-sv -work work -O0
+!s92 -sv -work work +incdir+C:/Users/Thales/Desktop/FLOPSMUX/Flopenr/Testbench -O0

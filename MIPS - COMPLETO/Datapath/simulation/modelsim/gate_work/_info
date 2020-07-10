@@ -1,0 +1,87 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/simulation/modelsim
+vDatapath
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1528755336
+!i10b 1
+!s100 PGWo:A]YMNTCXf0R5@lnP0
+I_TgKI@:dEL=Pf@1HKJzT_2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 !s105 Datapath_min_1200mv_0c_fast_svo_unit
+S1
+R0
+Z5 w1528755104
+Z6 8Datapath_min_1200mv_0c_fast.svo
+Z7 FDatapath_min_1200mv_0c_fast.svo
+L0 31
+Z8 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z9 !s108 1528755334.000000
+Z10 !s107 Datapath_min_1200mv_0c_fast.svo|
+Z11 !s90 -reportprogress|300|-sv|-work|work|+incdir+.|Datapath_min_1200mv_0c_fast.svo|
+!i113 1
+Z12 o-sv -work work
+Z13 !s92 -sv -work work +incdir+.
+Z14 tCvgOpt 0
+n@datapath
+vDatapath_tb
+R1
+R2
+!i10b 1
+!s100 @I^5l[HEP8GLle5hO?bzX3
+IZ_2<ND<nUCgDB:[omPF;[3
+R3
+!s105 Datapath_tb_sv_unit
+S1
+R0
+w1528741938
+8C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/testbench/Datapath_tb.sv
+FC:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/testbench/Datapath_tb.sv
+L0 3
+R8
+r1
+!s85 0
+31
+!s108 1528755336.000000
+!s107 C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/testbench/Datapath_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/testbench|C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/testbench/Datapath_tb.sv|
+!i113 1
+R12
+!s92 -sv -work work +incdir+C:/Users/rafae/Desktop/Projetos-CECI/Projetos-CECI/MIPS/Datapath/testbench
+R14
+n@datapath_tb
+vhard_block
+R1
+R2
+!i10b 1
+!s100 ?>[0M:BjJ_nLE^aD8RKn30
+IcOgT>oVlUfREJI1Ki0_Z@0
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 59047
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+R14

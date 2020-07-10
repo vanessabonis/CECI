@@ -1,0 +1,48 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Thales\Desktop\FLOPSMUX\Mux4\Mux4\Simulation\ModelSim
+vmux4
+II3mD_>Te4AT0`PS2zFNGP1
+VD;U:>2Gg;99:CJY5m?OWI2
+Z1 dC:\Users\Thales\Desktop\FLOPSMUX\Mux4\Mux4\Simulation\ModelSim
+w1554208300
+8mux4.vo
+Fmux4.vo
+L0 31
+Z2 OV;L;10.1d;51
+r1
+31
+o-vlog01compat -work work -O0
+!i10b 1
+!s100 PoDXbf:O8^IVR[i>M?Yb22
+!s85 0
+!s108 1554208310.182000
+!s107 mux4.vo|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|mux4.vo|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+. -O0
+vmux4_tb
+DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+!i10b 1
+!s100 5jzHO`eHMRH]IekHS5Xm63
+I9kKah6SXY1WL5MlII8FIN1
+VB]C>BGJg;0H1iMJYLoBcB2
+!s105 mux4_tb_sv_unit
+S1
+R1
+w1554123243
+8C:/Users/Thales/Desktop/FLOPSMUX/Mux4/Mux4/Testbench/mux4_tb.sv
+FC:/Users/Thales/Desktop/FLOPSMUX/Mux4/Mux4/Testbench/mux4_tb.sv
+L0 3
+R2
+r1
+!s85 0
+31
+!s108 1554208310.329000
+!s107 C:/Users/Thales/Desktop/FLOPSMUX/Mux4/Mux4/Testbench/mux4_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Thales/Desktop/FLOPSMUX/Mux4/Mux4/Testbench|C:/Users/Thales/Desktop/FLOPSMUX/Mux4/Mux4/Testbench/mux4_tb.sv|
+!s101 -O0
+o-sv -work work -O0
+!s92 -sv -work work +incdir+C:/Users/Thales/Desktop/FLOPSMUX/Mux4/Mux4/Testbench -O0

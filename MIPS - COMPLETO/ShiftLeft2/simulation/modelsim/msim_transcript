@@ -1,0 +1,44 @@
+# Reading C:/altera/13.0/modelsim_ase/tcl/vsim/pref.tcl 
+# do ShiftLeft2_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -sv -work work +incdir+C:/Users/Thales/Desktop/ShiftLeft2 {C:/Users/Thales/Desktop/ShiftLeft2/ShiftLeft2.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ShiftLeft2
+# 
+# Top level modules:
+# 	ShiftLeft2
+# 
+# vlog -sv -work work +incdir+C:/Users/Thales/Desktop/ShiftLeft2/testbench {C:/Users/Thales/Desktop/ShiftLeft2/testbench/ShiftLeft2_tb.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ShiftLeft2_tb
+# 
+# Top level modules:
+# 	ShiftLeft2_tb
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L rtl_work -L work -voptargs="+acc"  ShiftLeft2_tb
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps ShiftLeft2_tb 
+# Loading sv_std.std
+# Loading work.ShiftLeft2_tb
+# Loading work.ShiftLeft2
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Iniciando o o testbench
+# Numero de testes efetuados =           4
+# Numero de erros encontrados =           0
+# Break in Module ShiftLeft2_tb at C:/Users/Thales/Desktop/ShiftLeft2/testbench/ShiftLeft2_tb.sv line 46
+# Simulation Breakpoint: Break in Module ShiftLeft2_tb at C:/Users/Thales/Desktop/ShiftLeft2/testbench/ShiftLeft2_tb.sv line 46
+# MACRO ./ShiftLeft2_run_msim_rtl_verilog.do PAUSED at line 17

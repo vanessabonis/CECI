@@ -1,0 +1,406 @@
+Analysis & Synthesis report for bancoRegistradores
+Mon Apr 08 16:24:00 2019
+Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Elapsed Time Per Partition
+ 10. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                    ;
++------------------------------------+--------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Mon Apr 08 16:24:00 2019      ;
+; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
+; Revision Name                      ; bancoRegistradores                         ;
+; Top-level Entity Name              ; bancoRegistradores                         ;
+; Family                             ; Cyclone IV GX                              ;
+; Total logic elements               ; 98                                         ;
+;     Total combinational functions  ; 98                                         ;
+;     Dedicated logic registers      ; 32                                         ;
+; Total registers                    ; 32                                         ;
+; Total pins                         ; 21                                         ;
+; Total virtual pins                 ; 0                                          ;
+; Total memory bits                  ; 0                                          ;
+; Embedded Multiplier 9-bit elements ; 0                                          ;
+; Total GXB Receiver Channel PCS     ; 0                                          ;
+; Total GXB Receiver Channel PMA     ; 0                                          ;
+; Total GXB Transmitter Channel PCS  ; 0                                          ;
+; Total GXB Transmitter Channel PMA  ; 0                                          ;
+; Total PLLs                         ; 0                                          ;
++------------------------------------+--------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Top-level entity name                                                      ; bancoRegistradores ; bancoRegistradores ;
+; Family name                                                                ; Cyclone IV GX      ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                   ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                               ; Library ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------+---------+
+; decoder.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores/decoder.sv            ;         ;
+; flopenr.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores/flopenr.sv            ;         ;
+; inversor.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores/inversor.sv           ;         ;
+; mux2.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores/mux2.sv               ;         ;
+; mux4.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores/mux4.sv               ;         ;
+; mux32.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores/mux32.sv              ;         ;
+; tristate.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores/tristate.sv           ;         ;
+; bancoRegistradores.sv            ; yes             ; User SystemVerilog HDL File  ; C:/Users/Thales/Desktop/CECI_MIPS/bancoRegistradores/bancoRegistradores.sv ;         ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------+---------+
+
+
++---------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary ;
++--------------------------+------------------+
+; Resource                 ; Usage            ;
++--------------------------+------------------+
+; I/O pins                 ; 21               ;
+; DSP block 9-bit elements ; 0                ;
+; Maximum fan-out node     ; WD3~input        ;
+; Maximum fan-out          ; 32               ;
+; Total fan-out            ; 489              ;
+; Average fan-out          ; 2.84             ;
++--------------------------+------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                 ;
++------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+-------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node               ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                                               ; Library Name ;
++------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+-------------------------------------------------------------------+--------------+
+; |bancoRegistradores                      ; 98 (0)            ; 32 (0)       ; 0           ; 0            ; 0       ; 0         ; 0         ; 21   ; 0            ; |bancoRegistradores                                               ;              ;
+;    |decoder:decodificador|               ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |bancoRegistradores|decoder:decodificador                         ;              ;
+;    |flopenr:registrador[0].registrador|  ; 2 (2)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |bancoRegistradores|flopenr:registrador[0].registrador            ;              ;
+;    |flopenr:registrador[10].registrador| ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |bancoRegistradores|flopenr:registrador[10].registrador           ;              ;
+;    |flopenr:registrador[11].registrador| ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |bancoRegistradores|flopenr:registrador[11].registrador           ;              ;
+;    |flopenr:registrador[12].registrador| ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |bancoRegistradores|flopenr:registrador[12].registrador           ;              ;
+;    |flopenr:registrador[13].registrador| ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |bancoRegistradores|flopenr:registrador[13].registrador           ;              ;
+;    |flopenr:registrador[14].registrador| ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |bancoRegistradores|flopenr:registrador[14].registrador           ;              ;
+;    |flopenr:registrador[15].registrador| ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |bancoRegistradores|flopenr:registrador[15].registrador           ;              ;
+;    |flopenr:registrador[16].registrador| ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |bancoRegistradores|flopenr:registrador[16].registrador           ;              ;
+;    |flopenr:registrador[17].registrador| ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |bancoRegistradores|flopenr:registrador[17].registrador           ;              ;
+;    |flopenr:registrador[18].registrador| ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |bancoRegistradores|flopenr:registrador[18].registrador           ;              ;
+;    |flopenr:registrador[19].registrador| ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |bancoRegistradores|flopenr:registrador[19].registrador           ;              ;
+;    |flopenr:registrador[1].registrador|  ; 2 (2)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |bancoRegistradores|flopenr:registrador[1].registrador            ;              ;
+;    |flopenr:registrador[20].registrador| ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |bancoRegistradores|flopenr:registrador[20].registrador           ;              ;
+;    |flopenr:registrador[21].registrador| ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |bancoRegistradores|flopenr:registrador[21].registrador           ;              ;
+;    |flopenr:registrador[22].registrador| ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |bancoRegistradores|flopenr:registrador[22].registrador           ;              ;
+;    |flopenr:registrador[23].registrador| ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |bancoRegistradores|flopenr:registrador[23].registrador           ;              ;
+;    |flopenr:registrador[24].registrador| ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |bancoRegistradores|flopenr:registrador[24].registrador           ;              ;
+;    |flopenr:registrador[25].registrador| ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |bancoRegistradores|flopenr:registrador[25].registrador           ;              ;
+;    |flopenr:registrador[26].registrador| ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |bancoRegistradores|flopenr:registrador[26].registrador           ;              ;
+;    |flopenr:registrador[27].registrador| ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |bancoRegistradores|flopenr:registrador[27].registrador           ;              ;
+;    |flopenr:registrador[28].registrador| ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |bancoRegistradores|flopenr:registrador[28].registrador           ;              ;
+;    |flopenr:registrador[29].registrador| ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |bancoRegistradores|flopenr:registrador[29].registrador           ;              ;
+;    |flopenr:registrador[2].registrador|  ; 2 (2)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |bancoRegistradores|flopenr:registrador[2].registrador            ;              ;
+;    |flopenr:registrador[30].registrador| ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |bancoRegistradores|flopenr:registrador[30].registrador           ;              ;
+;    |flopenr:registrador[31].registrador| ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |bancoRegistradores|flopenr:registrador[31].registrador           ;              ;
+;    |flopenr:registrador[3].registrador|  ; 2 (2)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |bancoRegistradores|flopenr:registrador[3].registrador            ;              ;
+;    |flopenr:registrador[4].registrador|  ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |bancoRegistradores|flopenr:registrador[4].registrador            ;              ;
+;    |flopenr:registrador[5].registrador|  ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |bancoRegistradores|flopenr:registrador[5].registrador            ;              ;
+;    |flopenr:registrador[6].registrador|  ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |bancoRegistradores|flopenr:registrador[6].registrador            ;              ;
+;    |flopenr:registrador[7].registrador|  ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |bancoRegistradores|flopenr:registrador[7].registrador            ;              ;
+;    |flopenr:registrador[8].registrador|  ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |bancoRegistradores|flopenr:registrador[8].registrador            ;              ;
+;    |flopenr:registrador[9].registrador|  ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |bancoRegistradores|flopenr:registrador[9].registrador            ;              ;
+;    |mux32:muxA|                          ; 27 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |bancoRegistradores|mux32:muxA                                    ;              ;
+;       |mux2:m11|                         ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |bancoRegistradores|mux32:muxA|mux2:m11                           ;              ;
+;          |tristate:t0|                   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |bancoRegistradores|mux32:muxA|mux2:m11|tristate:t0               ;              ;
+;       |mux4:m10|                         ; 13 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |bancoRegistradores|mux32:muxA|mux4:m10                           ;              ;
+;          |mux2:finalmux|                 ; 13 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |bancoRegistradores|mux32:muxA|mux4:m10|mux2:finalmux             ;              ;
+;             |tristate:t0|                ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |bancoRegistradores|mux32:muxA|mux4:m10|mux2:finalmux|tristate:t0 ;              ;
+;             |tristate:t1|                ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |bancoRegistradores|mux32:muxA|mux4:m10|mux2:finalmux|tristate:t1 ;              ;
+;       |mux4:m9|                          ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |bancoRegistradores|mux32:muxA|mux4:m9                            ;              ;
+;          |mux2:finalmux|                 ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |bancoRegistradores|mux32:muxA|mux4:m9|mux2:finalmux              ;              ;
+;             |tristate:t0|                ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |bancoRegistradores|mux32:muxA|mux4:m9|mux2:finalmux|tristate:t0  ;              ;
+;             |tristate:t1|                ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |bancoRegistradores|mux32:muxA|mux4:m9|mux2:finalmux|tristate:t1  ;              ;
+;    |mux32:muxB|                          ; 27 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |bancoRegistradores|mux32:muxB                                    ;              ;
+;       |mux2:m11|                         ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |bancoRegistradores|mux32:muxB|mux2:m11                           ;              ;
+;          |tristate:t0|                   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |bancoRegistradores|mux32:muxB|mux2:m11|tristate:t0               ;              ;
+;       |mux4:m10|                         ; 13 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |bancoRegistradores|mux32:muxB|mux4:m10                           ;              ;
+;          |mux2:finalmux|                 ; 13 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |bancoRegistradores|mux32:muxB|mux4:m10|mux2:finalmux             ;              ;
+;             |tristate:t0|                ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |bancoRegistradores|mux32:muxB|mux4:m10|mux2:finalmux|tristate:t0 ;              ;
+;             |tristate:t1|                ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |bancoRegistradores|mux32:muxB|mux4:m10|mux2:finalmux|tristate:t1 ;              ;
+;       |mux4:m9|                          ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |bancoRegistradores|mux32:muxB|mux4:m9                            ;              ;
+;          |mux2:finalmux|                 ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |bancoRegistradores|mux32:muxB|mux4:m9|mux2:finalmux              ;              ;
+;             |tristate:t0|                ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |bancoRegistradores|mux32:muxB|mux4:m9|mux2:finalmux|tristate:t0  ;              ;
+;             |tristate:t1|                ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |bancoRegistradores|mux32:muxB|mux4:m9|mux2:finalmux|tristate:t1  ;              ;
++------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+-------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 32    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 32    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+    Info: Processing started: Mon Apr 08 16:23:57 2019
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off bancoRegistradores -c bancoRegistradores
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 1 design units, including 1 entities, in source file decoder.sv
+    Info (12023): Found entity 1: decoder
+Info (12021): Found 1 design units, including 1 entities, in source file flopenr.sv
+    Info (12023): Found entity 1: flopenr
+Info (12021): Found 1 design units, including 1 entities, in source file inversor.sv
+    Info (12023): Found entity 1: inversor
+Info (12021): Found 1 design units, including 1 entities, in source file mux2.sv
+    Info (12023): Found entity 1: mux2
+Info (12021): Found 1 design units, including 1 entities, in source file mux4.sv
+    Info (12023): Found entity 1: mux4
+Info (12021): Found 1 design units, including 1 entities, in source file mux32.sv
+    Info (12023): Found entity 1: mux32
+Info (12021): Found 1 design units, including 1 entities, in source file tristate.sv
+    Info (12023): Found entity 1: tristate
+Info (12021): Found 1 design units, including 1 entities, in source file bancoregistradores.sv
+    Info (12023): Found entity 1: bancoRegistradores
+Info (12021): Found 1 design units, including 1 entities, in source file testbench/bancoregistradores_tb.sv
+    Info (12023): Found entity 1: bancoRegistradores_tb
+Warning (10236): Verilog HDL Implicit Net warning at mux2.sv(3): created implicit net for "ns"
+Warning (10236): Verilog HDL Implicit Net warning at mux32.sv(3): created implicit net for "y0"
+Warning (10236): Verilog HDL Implicit Net warning at mux32.sv(4): created implicit net for "y1"
+Warning (10236): Verilog HDL Implicit Net warning at mux32.sv(5): created implicit net for "y2"
+Warning (10236): Verilog HDL Implicit Net warning at mux32.sv(6): created implicit net for "y3"
+Warning (10236): Verilog HDL Implicit Net warning at mux32.sv(7): created implicit net for "y4"
+Warning (10236): Verilog HDL Implicit Net warning at mux32.sv(8): created implicit net for "y5"
+Warning (10236): Verilog HDL Implicit Net warning at mux32.sv(9): created implicit net for "y6"
+Warning (10236): Verilog HDL Implicit Net warning at mux32.sv(10): created implicit net for "y7"
+Warning (10236): Verilog HDL Implicit Net warning at mux32.sv(12): created implicit net for "y8"
+Warning (10236): Verilog HDL Implicit Net warning at mux32.sv(13): created implicit net for "y9"
+Warning (10236): Verilog HDL Implicit Net warning at bancoRegistradores_tb.sv(12): created implicit net for "ck"
+Info (12127): Elaborating entity "bancoRegistradores" for the top level hierarchy
+Info (12128): Elaborating entity "decoder" for hierarchy "decoder:decodificador"
+Info (12128): Elaborating entity "flopenr" for hierarchy "flopenr:registrador[0].registrador"
+Info (12128): Elaborating entity "mux32" for hierarchy "mux32:muxA"
+Info (12128): Elaborating entity "mux4" for hierarchy "mux32:muxA|mux4:m1"
+Info (12128): Elaborating entity "mux2" for hierarchy "mux32:muxA|mux4:m1|mux2:lowmux"
+Info (12128): Elaborating entity "tristate" for hierarchy "mux32:muxA|mux4:m1|mux2:lowmux|tristate:t0"
+Info (12128): Elaborating entity "inversor" for hierarchy "mux32:muxA|mux4:m1|mux2:lowmux|inversor:inv"
+Info (276014): Found 1 instances of uninferred RAM logic
+    Info (276007): RAM logic "decoder:decodificador|Ram0" is uninferred due to asynchronous read logic
+Warning (13044): Always-enabled tri-state buffer(s) removed
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:muxA|mux2:m11|tristate:t0|y" to the node "RD1" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:muxB|mux2:m11|tristate:t0|y" to the node "RD2" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:muxA|mux4:m9|mux2:finalmux|tristate:t0|y" to the node "mux32:muxA|mux2:m11|tristate:t0|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:muxA|mux4:m10|mux2:finalmux|tristate:t0|y" to the node "mux32:muxA|mux2:m11|tristate:t1|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:muxB|mux4:m9|mux2:finalmux|tristate:t0|y" to the node "mux32:muxB|mux2:m11|tristate:t0|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:muxB|mux4:m10|mux2:finalmux|tristate:t0|y" to the node "mux32:muxB|mux2:m11|tristate:t1|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:muxA|mux4:m9|mux2:lowmux|tristate:t0|y" to the node "mux32:muxA|mux4:m9|mux2:finalmux|tristate:t0|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:muxA|mux4:m9|mux2:highmux|tristate:t0|y" to the node "mux32:muxA|mux4:m9|mux2:finalmux|tristate:t1|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:muxA|mux4:m10|mux2:lowmux|tristate:t0|y" to the node "mux32:muxA|mux4:m10|mux2:finalmux|tristate:t0|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:muxA|mux4:m10|mux2:highmux|tristate:t0|y" to the node "mux32:muxA|mux4:m10|mux2:finalmux|tristate:t1|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:muxB|mux4:m9|mux2:lowmux|tristate:t0|y" to the node "mux32:muxB|mux4:m9|mux2:finalmux|tristate:t0|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:muxB|mux4:m9|mux2:highmux|tristate:t0|y" to the node "mux32:muxB|mux4:m9|mux2:finalmux|tristate:t1|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:muxB|mux4:m10|mux2:lowmux|tristate:t0|y" to the node "mux32:muxB|mux4:m10|mux2:finalmux|tristate:t0|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:muxB|mux4:m10|mux2:highmux|tristate:t0|y" to the node "mux32:muxB|mux4:m10|mux2:finalmux|tristate:t1|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:muxA|mux4:m1|mux2:finalmux|tristate:t0|y" to the node "mux32:muxA|mux4:m9|mux2:lowmux|tristate:t0|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:muxA|mux4:m2|mux2:finalmux|tristate:t0|y" to the node "mux32:muxA|mux4:m9|mux2:lowmux|tristate:t1|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:muxA|mux4:m3|mux2:finalmux|tristate:t0|y" to the node "mux32:muxA|mux4:m9|mux2:highmux|tristate:t0|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:muxA|mux4:m4|mux2:finalmux|tristate:t0|y" to the node "mux32:muxA|mux4:m9|mux2:highmux|tristate:t1|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:muxA|mux4:m5|mux2:finalmux|tristate:t0|y" to the node "mux32:muxA|mux4:m10|mux2:lowmux|tristate:t0|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:muxA|mux4:m6|mux2:finalmux|tristate:t0|y" to the node "mux32:muxA|mux4:m10|mux2:lowmux|tristate:t1|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:muxA|mux4:m7|mux2:finalmux|tristate:t0|y" to the node "mux32:muxA|mux4:m10|mux2:highmux|tristate:t0|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:muxA|mux4:m8|mux2:finalmux|tristate:t0|y" to the node "mux32:muxA|mux4:m10|mux2:highmux|tristate:t1|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:muxB|mux4:m1|mux2:finalmux|tristate:t0|y" to the node "mux32:muxB|mux4:m9|mux2:lowmux|tristate:t0|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:muxB|mux4:m2|mux2:finalmux|tristate:t0|y" to the node "mux32:muxB|mux4:m9|mux2:lowmux|tristate:t1|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:muxB|mux4:m3|mux2:finalmux|tristate:t0|y" to the node "mux32:muxB|mux4:m9|mux2:highmux|tristate:t0|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:muxB|mux4:m4|mux2:finalmux|tristate:t0|y" to the node "mux32:muxB|mux4:m9|mux2:highmux|tristate:t1|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:muxB|mux4:m5|mux2:finalmux|tristate:t0|y" to the node "mux32:muxB|mux4:m10|mux2:lowmux|tristate:t0|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:muxB|mux4:m6|mux2:finalmux|tristate:t0|y" to the node "mux32:muxB|mux4:m10|mux2:lowmux|tristate:t1|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:muxB|mux4:m7|mux2:finalmux|tristate:t0|y" to the node "mux32:muxB|mux4:m10|mux2:highmux|tristate:t0|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:muxB|mux4:m8|mux2:finalmux|tristate:t0|y" to the node "mux32:muxB|mux4:m10|mux2:highmux|tristate:t1|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:muxA|mux4:m1|mux2:lowmux|tristate:t0|y" to the node "mux32:muxA|mux4:m1|mux2:finalmux|tristate:t0|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:muxA|mux4:m1|mux2:highmux|tristate:t0|y" to the node "mux32:muxA|mux4:m1|mux2:finalmux|tristate:t1|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:muxA|mux4:m2|mux2:lowmux|tristate:t0|y" to the node "mux32:muxA|mux4:m2|mux2:finalmux|tristate:t0|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:muxA|mux4:m2|mux2:highmux|tristate:t0|y" to the node "mux32:muxA|mux4:m2|mux2:finalmux|tristate:t1|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:muxA|mux4:m3|mux2:lowmux|tristate:t0|y" to the node "mux32:muxA|mux4:m3|mux2:finalmux|tristate:t0|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:muxA|mux4:m3|mux2:highmux|tristate:t0|y" to the node "mux32:muxA|mux4:m3|mux2:finalmux|tristate:t1|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:muxA|mux4:m4|mux2:lowmux|tristate:t0|y" to the node "mux32:muxA|mux4:m4|mux2:finalmux|tristate:t0|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:muxA|mux4:m4|mux2:highmux|tristate:t0|y" to the node "mux32:muxA|mux4:m4|mux2:finalmux|tristate:t1|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:muxA|mux4:m5|mux2:lowmux|tristate:t0|y" to the node "mux32:muxA|mux4:m5|mux2:finalmux|tristate:t0|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:muxA|mux4:m5|mux2:highmux|tristate:t0|y" to the node "mux32:muxA|mux4:m5|mux2:finalmux|tristate:t1|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:muxA|mux4:m6|mux2:lowmux|tristate:t0|y" to the node "mux32:muxA|mux4:m6|mux2:finalmux|tristate:t0|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:muxA|mux4:m6|mux2:highmux|tristate:t0|y" to the node "mux32:muxA|mux4:m6|mux2:finalmux|tristate:t1|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:muxA|mux4:m7|mux2:lowmux|tristate:t0|y" to the node "mux32:muxA|mux4:m7|mux2:finalmux|tristate:t0|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:muxA|mux4:m7|mux2:highmux|tristate:t0|y" to the node "mux32:muxA|mux4:m7|mux2:finalmux|tristate:t1|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:muxA|mux4:m8|mux2:lowmux|tristate:t0|y" to the node "mux32:muxA|mux4:m8|mux2:finalmux|tristate:t0|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:muxA|mux4:m8|mux2:highmux|tristate:t0|y" to the node "mux32:muxA|mux4:m8|mux2:finalmux|tristate:t1|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:muxB|mux4:m1|mux2:lowmux|tristate:t0|y" to the node "mux32:muxB|mux4:m1|mux2:finalmux|tristate:t0|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:muxB|mux4:m1|mux2:highmux|tristate:t0|y" to the node "mux32:muxB|mux4:m1|mux2:finalmux|tristate:t1|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:muxB|mux4:m2|mux2:lowmux|tristate:t0|y" to the node "mux32:muxB|mux4:m2|mux2:finalmux|tristate:t0|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:muxB|mux4:m2|mux2:highmux|tristate:t0|y" to the node "mux32:muxB|mux4:m2|mux2:finalmux|tristate:t1|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:muxB|mux4:m3|mux2:lowmux|tristate:t0|y" to the node "mux32:muxB|mux4:m3|mux2:finalmux|tristate:t0|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:muxB|mux4:m3|mux2:highmux|tristate:t0|y" to the node "mux32:muxB|mux4:m3|mux2:finalmux|tristate:t1|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:muxB|mux4:m4|mux2:lowmux|tristate:t0|y" to the node "mux32:muxB|mux4:m4|mux2:finalmux|tristate:t0|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:muxB|mux4:m4|mux2:highmux|tristate:t0|y" to the node "mux32:muxB|mux4:m4|mux2:finalmux|tristate:t1|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:muxB|mux4:m5|mux2:lowmux|tristate:t0|y" to the node "mux32:muxB|mux4:m5|mux2:finalmux|tristate:t0|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:muxB|mux4:m5|mux2:highmux|tristate:t0|y" to the node "mux32:muxB|mux4:m5|mux2:finalmux|tristate:t1|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:muxB|mux4:m6|mux2:lowmux|tristate:t0|y" to the node "mux32:muxB|mux4:m6|mux2:finalmux|tristate:t0|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:muxB|mux4:m6|mux2:highmux|tristate:t0|y" to the node "mux32:muxB|mux4:m6|mux2:finalmux|tristate:t1|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:muxB|mux4:m7|mux2:lowmux|tristate:t0|y" to the node "mux32:muxB|mux4:m7|mux2:finalmux|tristate:t0|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:muxB|mux4:m7|mux2:highmux|tristate:t0|y" to the node "mux32:muxB|mux4:m7|mux2:finalmux|tristate:t1|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:muxB|mux4:m8|mux2:lowmux|tristate:t0|y" to the node "mux32:muxB|mux4:m8|mux2:finalmux|tristate:t0|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:muxB|mux4:m8|mux2:highmux|tristate:t0|y" to the node "mux32:muxB|mux4:m8|mux2:finalmux|tristate:t1|y" into a wire
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 119 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 19 input pins
+    Info (21059): Implemented 2 output pins
+    Info (21061): Implemented 98 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 76 warnings
+    Info: Peak virtual memory: 4664 megabytes
+    Info: Processing ended: Mon Apr 08 16:24:01 2019
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:03
+
+

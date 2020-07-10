@@ -1,0 +1,53 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Thales\Desktop\ShiftLeft2\simulation\modelsim
+vShiftLeft2
+Z1 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+I:XnReVEQZ_5E<J^bc;WNG0
+VEU[PlMUP[=^nWb`hUIj;81
+S1
+Z2 dC:\Users\Thales\Desktop\ShiftLeft2\simulation\modelsim
+w1554913516
+8ShiftLeft2_6_1200mv_85c_slow.svo
+FShiftLeft2_6_1200mv_85c_slow.svo
+L0 31
+Z3 OV;L;10.1d;51
+r1
+31
+Z4 o-sv -work work -O0
+n@shift@left2
+!i10b 1
+!s100 KkF6ETMOdEzjoMI9iXIn00
+!s105 ShiftLeft2_6_1200mv_85c_slow_svo_unit
+!s85 0
+!s108 1554914060.341000
+!s107 ShiftLeft2_6_1200mv_85c_slow.svo|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+.|ShiftLeft2_6_1200mv_85c_slow.svo|
+!s101 -O0
+!s92 -sv -work work +incdir+. -O0
+vShiftLeft2_tb
+R1
+!i10b 1
+!s100 5g^3385z[PQmO::CnAIW]0
+I3S6NLffPkcdiHW?NK_F5A0
+V@h<J]OTgW6Vb6[e@f4X:63
+!s105 ShiftLeft2_tb_sv_unit
+S1
+R2
+w1554914036
+8C:/Users/Thales/Desktop/ShiftLeft2/testbench/ShiftLeft2_tb.sv
+FC:/Users/Thales/Desktop/ShiftLeft2/testbench/ShiftLeft2_tb.sv
+L0 2
+R3
+r1
+!s85 0
+31
+!s108 1554914060.522000
+!s107 C:/Users/Thales/Desktop/ShiftLeft2/testbench/ShiftLeft2_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Thales/Desktop/ShiftLeft2/testbench|C:/Users/Thales/Desktop/ShiftLeft2/testbench/ShiftLeft2_tb.sv|
+!s101 -O0
+R4
+!s92 -sv -work work +incdir+C:/Users/Thales/Desktop/ShiftLeft2/testbench -O0
+n@shift@left2_tb

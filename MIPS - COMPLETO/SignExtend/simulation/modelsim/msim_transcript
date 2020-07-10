@@ -1,0 +1,52 @@
+# Reading C:/altera/13.0/modelsim_ase/tcl/vsim/pref.tcl 
+# do SignExtend_run_msim_gate_systemverilog.do 
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Copying C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -sv -work work +incdir+. {SignExtend_6_1200mv_85c_slow.svo}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SignExtend
+# 
+# Top level modules:
+# 	SignExtend
+# 
+# vlog -sv -work work +incdir+C:/Users/Thales/Desktop/SignExtend/testbench {C:/Users/Thales/Desktop/SignExtend/testbench/SignExtend_tb.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SignExtend_tb
+# 
+# Top level modules:
+# 	SignExtend_tb
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_mf_ver -L altera_ver -L lpm_ver -L sgate_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L gate_work -L work -voptargs="+acc"  SignExtend_tb
+# vsim +transport_int_delays +transport_path_delays -L altera_mf_ver -L altera_ver -L lpm_ver -L sgate_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L gate_work -L work -voptargs=\"+acc\" -t 1ps SignExtend_tb 
+# Loading sv_std.std
+# Loading work.SignExtend_tb
+# Loading work.SignExtend
+# Loading cycloneiv_ver.cycloneiv_io_obuf
+# Loading cycloneiv_ver.cycloneiv_io_ibuf
+# SDF 10.1d Compiler 2012.11 Nov  2 2012
+# 
+# Loading instances from SignExtend_6_1200mv_85c_v_slow.sdo
+# Loading timing data from SignExtend_6_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /SignExtend_tb File: C:/Users/Thales/Desktop/SignExtend/testbench/SignExtend_tb.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Iniciando Test_bench
+# número de testes efetuados =          16
+# número de erros encontrados =           0
+# Break in Module SignExtend_tb at C:/Users/Thales/Desktop/SignExtend/testbench/SignExtend_tb.sv line 43
+# Simulation Breakpoint: Break in Module SignExtend_tb at C:/Users/Thales/Desktop/SignExtend/testbench/SignExtend_tb.sv line 43
+# MACRO ./SignExtend_run_msim_gate_systemverilog.do PAUSED at line 17

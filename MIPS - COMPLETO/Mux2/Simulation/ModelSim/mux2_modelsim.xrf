@@ -1,0 +1,13 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/Thales/Desktop/FLOPSMUX/Mux2/Testbench/mux2_tb.sv
+source_file = 1, C:/Users/Thales/Desktop/FLOPSMUX/Mux2/inversor.sv
+source_file = 1, C:/Users/Thales/Desktop/FLOPSMUX/Mux2/tristate.sv
+source_file = 1, C:/Users/Thales/Desktop/FLOPSMUX/Mux2/mux2.sv
+source_file = 1, C:/Users/Thales/Desktop/FLOPSMUX/Mux2/db/mux2.cbx.xml
+source_file = 1, mux2_tv.tv
+design_name = mux2
+instance = comp, \y~output , y~output, mux2, 1
+instance = comp, \d1~input , d1~input, mux2, 1
+instance = comp, \s~input , s~input, mux2, 1
+instance = comp, \d0~input , d0~input, mux2, 1
+instance = comp, \t0|y~0 , t0|y~0, mux2, 1

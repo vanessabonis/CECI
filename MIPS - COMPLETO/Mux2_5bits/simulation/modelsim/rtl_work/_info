@@ -1,0 +1,60 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/rafae/Desktop/Projetos-CECI/MIPS/multiplexadores/Sem_Parameter/mux2_5bits/simulation/modelsim
+vmux2_5bits
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+!s110 1527478130
+!i10b 1
+!s100 ?jfF@kkPJ3<3aoDF]Y;cT3
+I_^HCG45]MhCYG;W@DK[`P1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+!s105 mux2_5bits_sv_unit
+S1
+R0
+w1527477249
+8C:/Users/rafae/Desktop/Projetos-CECI/MIPS/multiplexadores/Sem_Parameter/mux2_5bits/mux2_5bits.sv
+FC:/Users/rafae/Desktop/Projetos-CECI/MIPS/multiplexadores/Sem_Parameter/mux2_5bits/mux2_5bits.sv
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1527478130.000000
+!s107 C:/Users/rafae/Desktop/Projetos-CECI/MIPS/multiplexadores/Sem_Parameter/mux2_5bits/mux2_5bits.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/rafae/Desktop/Projetos-CECI/MIPS/multiplexadores/Sem_Parameter/mux2_5bits|C:/Users/rafae/Desktop/Projetos-CECI/MIPS/multiplexadores/Sem_Parameter/mux2_5bits/mux2_5bits.sv|
+!i113 1
+Z4 o-sv -work work
+!s92 -sv -work work +incdir+C:/Users/rafae/Desktop/Projetos-CECI/MIPS/multiplexadores/Sem_Parameter/mux2_5bits
+Z5 tCvgOpt 0
+vmux2_5bits_tb
+R1
+!s110 1527478131
+!i10b 1
+!s100 L`W?bb3JYoa]Ta3FHQQ021
+I_ZF43JDI6P@1jYUm<NVGE0
+R2
+!s105 mux2_5bits_tb_sv_unit
+S1
+R0
+w1527478045
+8C:/Users/rafae/Desktop/Projetos-CECI/MIPS/multiplexadores/Sem_Parameter/mux2_5bits/testbench/mux2_5bits_tb.sv
+FC:/Users/rafae/Desktop/Projetos-CECI/MIPS/multiplexadores/Sem_Parameter/mux2_5bits/testbench/mux2_5bits_tb.sv
+L0 3
+R3
+r1
+!s85 0
+31
+!s108 1527478131.000000
+!s107 C:/Users/rafae/Desktop/Projetos-CECI/MIPS/multiplexadores/Sem_Parameter/mux2_5bits/testbench/mux2_5bits_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/rafae/Desktop/Projetos-CECI/MIPS/multiplexadores/Sem_Parameter/mux2_5bits/testbench|C:/Users/rafae/Desktop/Projetos-CECI/MIPS/multiplexadores/Sem_Parameter/mux2_5bits/testbench/mux2_5bits_tb.sv|
+!i113 1
+R4
+!s92 -sv -work work +incdir+C:/Users/rafae/Desktop/Projetos-CECI/MIPS/multiplexadores/Sem_Parameter/mux2_5bits/testbench
+R5
